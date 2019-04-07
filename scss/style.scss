@@ -1,0 +1,49 @@
+// Mixins.
+
+@mixin block-border($width) {
+    border: $width solid $fsfi-dbrown;
+    padding: 5px 20px 15px 20px;
+}
+
+// Home - Banner
+
+@mixin banner-p-margin-top($pixels) {
+    p.banner-text {
+            margin-top: $pixels;
+    }
+}
+
+@include mobile {
+    img.banner-img {
+        display: none;
+    }
+}
+
+@include tablet-only {
+    @include banner-p-margin-top(50px);
+}
+
+@include desktop {
+    @include banner-p-margin-top(60px);
+}
+
+
+// Home - News, Articles.
+
+.news,
+.articles {
+    .wrapper { @include block-border(2px); }
+
+    a {
+        color: $black;
+    }
+    a:hover {
+        color: $fsfi-dbrown;
+    }
+
+    .title span {
+        color: $fsfi-dbrown;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+}

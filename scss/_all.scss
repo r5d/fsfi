@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@import "../vendor/bulma-0.7.4/sass/utilities/functions.sass";
+
+$navbar-item-img-max-height: 9.75rem !default;
+
+// Colors.
+$fsfi-dbrown: rgb(202, 101, 52);
+$fsfi-lbrown: rgb(253, 203, 50);
+
+
+// Link colors
+$fsfi-link-color: $fsfi-dbrown;
+$fsfi-link-visited-color: rgb(183, 79, 28);
+$link: $fsfi-link-color !default;
+$link-invert: findColorInvert($fsfi-link-color) !default;
+$link-visited: $fsfi-link-visited-color !default;
+
+// Section
+$section-padding: 1rem 1.5rem !default;
+
+// Footer
+$footer-padding: 3rem 1.5rem 3rem;
+
+// Bulma
+@import "../vendor/bulma-0.7.4/sass/utilities/_all.sass";
+@import "../vendor/bulma-0.7.4/sass/base/_all.sass";
+@import "../vendor/bulma-0.7.4/sass/elements/_all.sass";
+@import "../vendor/bulma-0.7.4/sass/components/_all.sass";
+@import "../vendor/bulma-0.7.4/sass/grid/_all.sass";
+@import "../vendor/bulma-0.7.4/sass/layout/_all.sass";
+
+@import "style.scss";
