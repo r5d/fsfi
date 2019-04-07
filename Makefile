@@ -53,3 +53,7 @@ clean-css:
 clean-js:
 	rm -rf $(JS_DIR)
 .PHONY: clean-js
+
+upload: site
+	rsync -avz _build/ nf:~/public_html/tmp/fsfi/
+.PHONY: upload
