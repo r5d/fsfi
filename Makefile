@@ -39,7 +39,7 @@ $(JS_DIR):
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 
-clean: clean-css clean-build
+clean: clean-css clean-js clean-build
 .PHONY: clean
 
 clean-build:
@@ -49,3 +49,7 @@ clean-build:
 clean-css:
 	rm -rf $(CSS)
 .PHONY: clean-css
+
+clean-js:
+	rm -rf $(JS_DIR)
+.PHONY: clean-js
