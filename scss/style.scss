@@ -13,6 +13,10 @@
     }
 }
 
+.fsfi-banner header {
+    display:none;
+}
+
 @include mobile {
     img.banner-img {
         display: none;
