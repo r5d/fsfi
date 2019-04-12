@@ -55,5 +55,5 @@ clean-js:
 .PHONY: clean-js
 
 upload: site
-	rsync -avz _build/ nf:~/public_html/tmp/fsfi/
+	rsync -avz _build/ w@lyra:~/fsfi/
 .PHONY: upload
