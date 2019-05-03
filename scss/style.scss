@@ -58,3 +58,26 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+// Join
+.fellowship-type {
+    border: 2px solid $fsfi-dbrown;
+    margin-bottom: 15px;
+
+    .content header {
+        margin-bottom: 10px;
+    }
+
+    .content h1 {
+        font-size: 1.1em;
+    }
+
+    .content p {
+        margin-bottom: 2px;
+    }
+
+    .content ul {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+}
