@@ -1,0 +1,74 @@
+<!--#include virtual="/includes/html-open.html"-->
+
+<!--#include virtual="/includes/header-open.html"-->
+<title>Contact &mdash; Free Software Foundation India</title>
+<!--#include virtual="/includes/header-close.html"-->
+
+<!--#include virtual="/includes/body-open.html"-->
+<!--#include virtual="/includes/navbar.html"-->
+
+<div class="container main">
+    <section class="section">
+        <div class="content">
+            <header>
+                <h1>Contact</h1>
+            </header>
+
+            <div class="columns">
+                <div class="column is-three-fifths">
+
+                    <form class="contact-form" method="post"
+                          action="/contact/submit">
+
+                        <div class="field">
+                            <label class="label name">Name</label>
+                            <div class="control">
+                                <input name="name" class="input" type="text">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label email">Email</label>
+                            <div class="control">
+                                <input name="email" class="input" type="email"
+                                       required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label subject">Subject</label>
+                            <div class="control">
+                                <input name="subject" class="input" type="text"
+                                       required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label msg">Message</label>
+                            <div class="control">
+                                <textarea name="msg" class="textarea"
+                                          required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-link" type="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div> <!-- end column -->
+            </div> <!-- end columns -->
+
+        </div>
+    </section>
+
+</div>
+
+<!--#include virtual="/includes/footer.html"-->
+<!--#include virtual="/includes/js.html"-->
+<!--#include virtual="/includes/body-close.html"-->
+<!--#include virtual="/includes/html-close.html"-->
