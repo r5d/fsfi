@@ -33,6 +33,15 @@ def read(f):
     return c
 
 
+def slug(p):
+    m = re.search(r'([a-zA-Z\-]+)\.md', p)
+
+    if not m:
+        err('Unable to get slug')
+
+    return m.group(1)
+
+
 def title(c):
     m = re.search(r'^\# (.+)$', c, re.M)
 
