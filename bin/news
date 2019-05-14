@@ -13,7 +13,7 @@ import sys
 # placeholders
 PH = {
    'title': '<!-- NEWS-ITEM-TITLE -->',
-    'date': '<!-- DATE -->',
+   'date': '<!-- DATE -->',
    'content': '<!-- MAIN-CONTENT -->',
 }
 
