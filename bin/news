@@ -1,0 +1,76 @@
+#!/usr/bin/env python3
+#
+#   SPDX-License-Identifier: ISC
+#
+#   Copyright © 2019 Free Software Foundation India.
+#
+
+import os
+import re
+import sys
+
+
+# placeholders
+PH = {
+   'title': '<!-- NEWS-ITEM-TITLE -->',
+    'date': '<!-- DATE -->',
+   'content': '<!-- MAIN-CONTENT -->',
+}
+
+
+def err(s):
+    print('Error: {}'.format(s))
+    sys.exit(1)
+
+
+def files():
+    return os.scandir('md/news')
+
+
+def read(f):
+    with open(f) as f:
+        c = f.read()
+    return c
+
+
+def title(c):
+    m = re.search(r'^\# (.+)$', c, re.M)
+
+    if not m:
+        err('Title not found')
+
+    return m.group(1)
+
+
+def date(c):
+    m = re.search(r'pubdate: ([0-9]{8})', c)
+
+    if not m:
+        err('Publication date not found')
+
+    return m.group(1)
+
+
+def content(c):
+    m = re.search(r'^\# (.+)$', c, re.M)
+
+    if not m:
+        err('Unable to slurp content')
+
+    return c[m.end():]
+
+
+def process(f):
+    c = read(f.path)
+
+    t = title(c)
+    d = date(c)
+    c = content(c)
+
+
+def run():
+    for f in files():
+        process(f)
+
+if __name__ == "__main__":
+    run()
