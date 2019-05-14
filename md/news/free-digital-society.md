@@ -1,3 +1,5 @@
+<!-- pubdate: 20140507 -->
+
 # FSF India's call for a free digital society supported by free software
 
 It is election time in India. All political parties are finalizing
