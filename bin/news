@@ -108,10 +108,13 @@ def process(f):
     d = date(c)
     c = content(c)
 
+    h = html(t, d, c)
+
 
 def run():
     for f in files():
         process(f)
+
 
 if __name__ == "__main__":
     run()
