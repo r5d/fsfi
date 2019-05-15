@@ -8,6 +8,7 @@
 import datetime
 import os
 import re
+import subprocess as subp
 import sys
 
 
@@ -76,6 +77,19 @@ def template(type):
 
 def datefmt(d):
     return datetime.datetime.strptime(d, '%Y%m%d').strftime('%B %d, %Y')
+
+
+def markdown(c):
+    try:
+        r = subp.run(['bin/markdown'],
+                     input=c,
+                     stdout=subp.PIPE,
+                     check=True,
+                     universal_newlines=True)
+    except Exception as e:
+        p('Markdown failed for {}'.format(c))
+
+    return r.stdout
 
 
 def process(f):
