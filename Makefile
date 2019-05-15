@@ -20,6 +20,10 @@ img: $(BUILD_DIR)
 	rsync -a img/ $(IMG_DIR)/
 .PHONY: img
 
+news:
+	@python3 ./bin/news
+.PHONY: news
+
 css: $(CSS)
 .PHONY: css
 
