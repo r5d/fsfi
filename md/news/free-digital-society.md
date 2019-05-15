@@ -14,7 +14,7 @@ respects the four essential freedoms: 1. to run the program, 2. study
 and change its source code, 3. redistribute unchanged,
 and 4. redistribute with changes.
 
-## India will advance towards digital freedom on six fronts.
+## India will advance towards digital freedom on six fronts
 
   - For digital sovereignty, India will cease installation of non-free
     software in government agencies, then over time replace currently
