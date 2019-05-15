@@ -92,6 +92,15 @@ def markdown(c):
     return r.stdout
 
 
+def html(t, d, c):
+    h = template('news')
+    h = h.replace(PH['title'], t, 2)
+    h = h.replace(PH['date'], datefmt(d), 1)
+    h = h.replace(PH['content'], markdown(c), 1)
+
+    return h
+
+
 def process(f):
     c = read(f.path)
 
