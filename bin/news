@@ -5,6 +5,7 @@
 #   Copyright © 2019 Free Software Foundation of India.
 #
 
+import datetime
 import os
 import re
 import sys
@@ -71,6 +72,10 @@ def content(c):
 
 def template(type):
     return read('templates/{}.html'.format(type))
+
+
+def datefmt(d):
+    return datetime.datetime.strptime(d, '%Y%m%d').strftime('%B %d, %Y')
 
 
 def process(f):
