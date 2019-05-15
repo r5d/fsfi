@@ -69,6 +69,10 @@ def content(c):
     return c[m.end():]
 
 
+def template(type):
+    return read('templates/{}.html'.format(type))
+
+
 def process(f):
     c = read(f.path)
 
