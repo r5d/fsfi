@@ -16,9 +16,9 @@ static: $(BUILD_DIR)
 .PHONY: static
 
 
-news:
-	@python3 ./bin/news
-.PHONY: news
+html:
+	@python3 ./bin/html
+.PHONY: html
 
 
 css: $(CSS)
