@@ -1,31 +1,29 @@
 BUILD_DIR=_build
 CSS_DIR=$(BUILD_DIR)/assets/css
 JS_DIR=$(BUILD_DIR)/assets/js
-IMG_DIR=$(BUILD_DIR)/assets/img
 
 SCSS=scss/_all.scss
 CSS=$(CSS_DIR)/fsfi.css
 
 JS_SRC=js/navbar.js
 
-site: $(BUILD_DIR) css img html js
+site: $(BUILD_DIR) css static js
 .PHONY: site
 
 
-html: $(BUILD_DIR)
-	rsync -a html/ $(BUILD_DIR)/
-.PHONY: html
+static: $(BUILD_DIR)
+	rsync -a static/ $(BUILD_DIR)/
+.PHONY: static
 
-img: $(BUILD_DIR)
-	rsync -a img/ $(IMG_DIR)/
-.PHONY: img
 
 news:
 	@python3 ./bin/news
 .PHONY: news
 
+
 css: $(CSS)
 .PHONY: css
+
 
 $(CSS): $(SCSS) scss/style.scss $(BUILD_DIR)
 	mkdir -p `dirname $(CSS)`
@@ -35,6 +33,7 @@ $(CSS): $(SCSS) scss/style.scss $(BUILD_DIR)
 js: $(JS_DIR) $(JS_SRC)
 	cat $(JS_SRC) > $(JS_DIR)/fsfi.js
 .PHONY: js
+
 
 $(JS_DIR):
 	mkdir -p $(JS_DIR)
