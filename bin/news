@@ -83,7 +83,7 @@ def content(c):
 
 
 def template(type):
-    return read('templates/{}.html'.format(type))
+    return read('templates/html/{}.html'.format(type))
 
 
 def datefmt(d):
