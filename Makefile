@@ -42,20 +42,11 @@ $(JS_DIR):
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 
-clean: clean-css clean-js clean-build
+
+clean:
+	rm -rf $(BUILD_DIR)
 .PHONY: clean
 
-clean-build:
-	rm -rf $(BUILD_DIR)
-.PHONY: clean-build
-
-clean-css:
-	rm -rf $(CSS)
-.PHONY: clean-css
-
-clean-js:
-	rm -rf $(JS_DIR)
-.PHONY: clean-js
 
 upload: site
 	rsync -avz _build/ w@lyra:~/fsfi/
