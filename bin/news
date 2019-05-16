@@ -115,11 +115,14 @@ def html(t, d, c):
 def process(f):
     c = read(f.path)
 
+    s = slug(f.path)
     t = title(c)
     d = date(c)
     c = content(c)
 
     h = html(t, d, c)
+
+    write('/'.join(['_build', 'news', s, 'index.html']), h)
 
 
 def run():
