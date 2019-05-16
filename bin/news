@@ -7,6 +7,7 @@
 
 import datetime
 import os
+import os.path
 import re
 import subprocess as subp
 import sys
@@ -33,6 +34,16 @@ def read(f):
     with open(f) as f:
         c = f.read()
     return c
+
+
+def write(p, c):
+    d = os.path.dirname(p)
+
+    if not os.path.exists(d):
+        os.makedirs(d)
+
+    with open(p, 'w') as f:
+        f.write(c)
 
 
 def slug(p):
