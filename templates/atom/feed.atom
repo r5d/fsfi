@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><!-- Feed Name --> Feed - Free Software Foundation of India</title>
+  <id>https://fsf.org.in/<!-- Feed Name -->.atom</id>
+  <link rel="self" href="<!-- Feed Link -->"></link>
+  <updated><!-- Feed Updated --></updated>
+  <author><name>Free Software Foundation of India</name></author>
+  <!-- Entries -->
+</feed>
