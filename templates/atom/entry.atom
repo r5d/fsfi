@@ -1,0 +1,7 @@
+  <entry>
+    <title><!-- Entry Title --></title>
+    <id>fsf.org.in:<!-- Entry Id --></id>
+    <link rel="alternate" href="<!-- Entry Link -->"></link>
+    <updated><!-- Entry Updated --></updated>
+    <content type="html"><!-- Entry Content --></content>
+  </entry>
