@@ -20,6 +20,10 @@ html:
 	@python3 ./bin/html
 .PHONY: html
 
+feed:
+	@python3 ./bin/feed
+.PHONY: feed
+
 
 css: $(CSS)
 .PHONY: css

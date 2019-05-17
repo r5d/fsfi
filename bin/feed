@@ -1,0 +1,174 @@
+#!/usr/bin/env python3
+#
+#   SPDX-License-Identifier: ISC
+#
+#   Copyright © 2019 Free Software Foundation of India.
+#
+
+import html
+import datetime
+import os
+import os.path
+import re
+import subprocess as subp
+
+
+URL = 'https://fsfi.web'
+SECTIONS = ['news']
+
+F_PH = {
+    'name': '<!-- Feed Name -->',
+    'link': '<!-- Feed Link -->',
+    'updated': '<!-- Feed Updated -->',
+    'entries': '<!-- Entries -->'
+}
+
+E_PH = {
+    'id': '<!-- Entry Id -->',
+    'title': '<!-- Entry Title -->',
+    'link': '<!-- Entry Link -->',
+    'updated': '<!-- Entry Updated -->',
+    'content': '<!-- Entry Content -->'
+}
+
+
+def files(sec):
+    return os.scandir('md' + '/' + sec)
+
+
+def read(f):
+    with open(f) as f:
+        c = f.read()
+    return c
+
+
+def write(p, c):
+    d = os.path.dirname(p)
+
+    if not os.path.exists(d):
+        os.makedirs(d)
+
+    with open(p, 'w') as f:
+        f.write(c)
+
+
+def slug(p):
+    m = re.search(r'([a-zA-Z\-]+)\.md', p)
+
+    if not m:
+        err('Unable to get slug')
+
+    return m.group(1)
+
+
+def template(type):
+    return read('templates/atom/{}.atom'.format(type))
+
+
+def title(c):
+    m = re.search(r'^\# (.+)$', c, re.M)
+
+    if not m:
+        err('Title not found')
+
+    return m.group(1)
+
+
+def elink(sec, s):
+    return '/'.join([URL, sec, s])
+
+
+def flink(sec):
+    return '/'.join([URL, sec, 'feed.atom'])
+
+
+def time(c):
+    m = re.search(r'pubdate: ([0-9]{8})', c)
+
+    if not m:
+        err('Publication date not found')
+
+    d = m.group(1)
+    d = datetime.datetime.strptime(d,'%Y%m%d').strftime('%Y-%m-%d')
+
+    return d + 'T00:00:00Z'
+
+
+def markdown(c):
+    try:
+        r = subp.run(['bin/markdown'],
+                     input=c,
+                     stdout=subp.PIPE,
+                     check=True,
+                     universal_newlines=True)
+    except Exception as e:
+        p('Markdown failed for {}'.format(c))
+
+    return r.stdout
+
+
+def massage(c):
+    c = html.escape(c)
+    c = c.replace('\n', '&#xA;')
+    c = re.sub(r' +', ' ', c)
+
+    return c
+
+
+def content(c):
+    m = re.search(r'^\# (.+)$', c, re.M)
+
+    if not m:
+        err('Unable to slurp content')
+
+    c = c[m.end():]
+    c = markdown(c)
+
+    return massage(c)
+
+
+def now():
+    n = datetime.datetime.today()
+
+    return n.strftime('%Y-%m-%dT%H:%M:%SZ')
+
+
+def entry(sec, f):
+    c = read(f.path)
+    s = slug(f.path)
+
+    e = template('entry')
+    e = e.replace(E_PH['id'], s, 1)
+    e = e.replace(E_PH['title'], title(c), 1)
+    e = e.replace(E_PH['link'], elink(sec, s), 1)
+    e = e.replace(E_PH['updated'], time(c), 1)
+    e = e.replace(E_PH['content'], content(c), 1)
+
+    return e
+
+
+def feed(sec, es):
+    f = template('feed')
+    f = f.replace(F_PH['name'], sec, 2)
+    f = f.replace(F_PH['link'], flink(sec), 1)
+    f = f.replace(F_PH['updated'], now(), 1)
+    f = f.replace(F_PH['entries'], es, 1)
+
+    return f
+
+
+def process(sec):
+    es = ''
+    for f in files(sec):
+        es += '\n' + entry(sec, f)
+
+    write('/'.join(['_build', sec, 'feed.atom']), feed(sec, es))
+
+
+def run():
+    for sec in SECTIONS:
+        process(sec)
+
+
+if __name__ == '__main__':
+    run()
