@@ -38,6 +38,15 @@ def err(s):
     sys.exit(1)
 
 
+def fok(f):
+    p = os.path.basename(f.path)
+
+    if re.search(r'(^[\.\#])|(~$)', p):
+        return False
+
+    return True
+
+
 def files(sec):
     return os.scandir('md' + '/' + sec)
 
