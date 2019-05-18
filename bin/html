@@ -36,7 +36,16 @@ def fok(f):
 
 
 def files():
-    return os.scandir('md/news')
+    files = os.scandir('md/news')
+
+    fs = []
+    for f in files:
+        if not fok(f):
+            print('Ignoring {}'.format(f.path))
+        else:
+            fs.append(f)
+
+    return fs
 
 
 def read(f):
