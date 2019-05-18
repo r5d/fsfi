@@ -7,7 +7,7 @@ CSS=$(CSS_DIR)/fsfi.css
 
 JS_SRC=js/navbar.js
 
-site: $(BUILD_DIR) css static js
+site: $(BUILD_DIR) css static js html feed
 .PHONY: site
 
 
