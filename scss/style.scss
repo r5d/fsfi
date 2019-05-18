@@ -7,30 +7,9 @@
 
 // Home - Banner
 
-@mixin banner-p-margin-top($pixels) {
-    p.banner-text {
-            margin-top: $pixels;
-    }
-}
-
 .fsfi-banner header {
     display:none;
 }
-
-@include mobile {
-    img.banner-img {
-        display: none;
-    }
-}
-
-@include tablet-only {
-    @include banner-p-margin-top(50px);
-}
-
-@include desktop {
-    @include banner-p-margin-top(60px);
-}
-
 
 // Home - News, Articles.
 
