@@ -13,7 +13,7 @@ import subprocess as subp
 import sys
 
 
-SECTIONS = ['news']
+SECTIONS = ['news', 'article']
 
 # placeholders
 PH = {
