@@ -15,7 +15,7 @@ import sys
 
 
 URL = 'https://fsfi.ricketyspace.net'
-SECTIONS = ['news']
+SECTIONS = ['news', 'article']
 
 F_PH = {
     'name': '<!-- Feed Name -->',
