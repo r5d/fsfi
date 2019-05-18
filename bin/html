@@ -18,6 +18,7 @@ SECTIONS = ['news']
 # placeholders
 PH = {
    'title': '<!-- ITEM-TITLE -->',
+   'author': '<!-- AUTHOR -->',
    'date': '<!-- DATE -->',
    'content': '<!-- MAIN-CONTENT -->',
 }
@@ -84,6 +85,15 @@ def title(c):
     return m.group(1)
 
 
+def author(c):
+    m = re.search(r'<!-- author: ([\w ]+) -->', c)
+
+    if not m:
+        return ''
+
+    return 'By ' + m.group(1)
+
+
 def date(c):
     m = re.search(r'pubdate: ([0-9]{8})', c)
 
@@ -128,6 +138,7 @@ def html(sec, f):
     s = slug(f.path)
 
     t = title(c)
+    a = author(c)
     d = date(c)
     c = content(c)
 
@@ -135,6 +146,9 @@ def html(sec, f):
     h = h.replace(PH['title'], t, 2)
     h = h.replace(PH['date'], datefmt(d), 1)
     h = h.replace(PH['content'], markdown(c), 1)
+
+    if author:
+        h = h.replace(PH['author'], a, 1)
 
     return s, h
 

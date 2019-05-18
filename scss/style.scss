@@ -104,9 +104,19 @@
         .meta {
             margin-bottom: 0.9em;
             text-transform: uppercase;
-            font-size: 0.9em;
-            border-left: 1px solid $fsfi-lbrown;
-            padding-left: 10px;
+            font-size: 0.8em;
+
+            .author {
+                display: inline-block;
+                padding-right: 10px;
+            }
+
+            .date {
+                display: inline-block;
+                border-left: 1px solid $fsfi-lbrown;
+                padding-left: 10px;
+            }
+
         }
 
         .header h1 {
