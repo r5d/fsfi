@@ -86,7 +86,7 @@ def title(c):
 
 
 def author(c):
-    m = re.search(r'<!-- author: ([\w ]+) -->', c)
+    m = re.search(r'<!-- author: ([\w\. ]+) -->', c)
 
     if not m:
         return ''
