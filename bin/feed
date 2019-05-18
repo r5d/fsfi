@@ -161,14 +161,17 @@ def entry(sec, f):
     c = read(f.path)
     s = slug(f.path)
 
+    t = time(c)
+    id = t + ':' + s
+
     e = template('entry')
-    e = e.replace(E_PH['id'], s, 1)
+    e = e.replace(E_PH['id'], id, 1)
     e = e.replace(E_PH['title'], title(c), 1)
     e = e.replace(E_PH['link'], elink(sec, s), 1)
-    e = e.replace(E_PH['updated'], time(c), 1)
+    e = e.replace(E_PH['updated'], t, 1)
     e = e.replace(E_PH['content'], content(c), 1)
 
-    return e
+    return id, e
 
 
 def esort(esd):
@@ -192,9 +195,12 @@ def feed(sec, es):
 
 
 def process(sec):
-    es = ''
+    esd = {}
     for f in files(sec):
-        es += entry(sec, f)
+        id, e = entry(sec, f)
+        esd[id] = e
+
+    es = ''.join(esort(esd))
 
     write('/'.join(['_build', sec, 'feed.atom']), feed(sec, es))
 
