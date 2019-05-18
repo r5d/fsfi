@@ -11,6 +11,7 @@ import os
 import os.path
 import re
 import subprocess as subp
+import sys
 
 
 URL = 'https://fsfi.web'
@@ -30,6 +31,11 @@ E_PH = {
     'updated': '<!-- Entry Updated -->',
     'content': '<!-- Entry Content -->'
 }
+
+
+def err(s):
+    print('Error: {}'.format(s))
+    sys.exit(1)
 
 
 def files(sec):
