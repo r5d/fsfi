@@ -46,11 +46,25 @@
         color: $fsfi-dbrown;
     }
 
+    .title {
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+
     .title span {
         color: $fsfi-dbrown;
         font-size: 1.3rem;
         text-transform: uppercase;
     }
+}
+
+// Feed Icon
+.feed-icon {
+    content: url('/assets/img/feed.svg');
+    background-color: $fsfi-dbrown;
+    max-width: 17px;
+    border-radius: 3px;
+    margin-left: 2px;
 }
 
 // About
