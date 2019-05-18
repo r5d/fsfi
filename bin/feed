@@ -184,7 +184,7 @@ def feed(sec, es):
 def process(sec):
     es = ''
     for f in files(sec):
-        es += '\n' + entry(sec, f)
+        es += entry(sec, f)
 
     write('/'.join(['_build', sec, 'feed.atom']), feed(sec, es))
 
