@@ -13,9 +13,11 @@ import subprocess as subp
 import sys
 
 
+SECTIONS = ['news']
+
 # placeholders
 PH = {
-   'title': '<!-- NEWS-ITEM-TITLE -->',
+   'title': '<!-- ITEM-TITLE -->',
    'date': '<!-- DATE -->',
    'content': '<!-- MAIN-CONTENT -->',
 }
@@ -35,8 +37,8 @@ def fok(f):
     return True
 
 
-def files():
-    files = os.scandir('md/news')
+def files(sec):
+    files = os.scandir('md' + '/' + sec)
 
     fs = []
     for f in files:
@@ -121,31 +123,31 @@ def markdown(c):
     return r.stdout
 
 
-def html(t, d, c):
-    h = template('news')
-    h = h.replace(PH['title'], t, 2)
-    h = h.replace(PH['date'], datefmt(d), 1)
-    h = h.replace(PH['content'], markdown(c), 1)
-
-    return h
-
-
-def process(f):
+def html(sec, f):
     c = read(f.path)
-
     s = slug(f.path)
+
     t = title(c)
     d = date(c)
     c = content(c)
 
-    h = html(t, d, c)
+    h = template(sec)
+    h = h.replace(PH['title'], t, 2)
+    h = h.replace(PH['date'], datefmt(d), 1)
+    h = h.replace(PH['content'], markdown(c), 1)
 
-    write('/'.join(['_build', 'news', s, 'index.html']), h)
+    return s, h
+
+
+def process(sec):
+    for f in files(sec):
+        s, h = html(sec, f)
+        write('/'.join(['_build', sec, s, 'index.html']), h)
 
 
 def run():
-    for f in files():
-        process(f)
+    for sec in SECTIONS:
+        process(sec)
 
 
 if __name__ == "__main__":
