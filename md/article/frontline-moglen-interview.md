@@ -44,6 +44,6 @@ it. Second, we have the people who know that they are using it and who
 have purchased the product or downloaded the product without
 necessarily accounting for all their copies. So what we can say is
 that Free Software is far more popular in the United States than what
-the United States is aware. [Read More (archived)][artcl]
+the United States is aware. [Read More (archived)][artcl].
 
-[arctl]: https://web.archive.org/web/20071027165534/http://www.frontlineonnet.com/fl2420/stories/20071019507610000.htm
+[artcl]: https://web.archive.org/web/20071027165534/http://www.frontlineonnet.com/fl2420/stories/20071019507610000.htm
