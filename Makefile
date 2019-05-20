@@ -31,7 +31,7 @@ css: $(CSS)
 
 $(CSS): $(SCSS) scss/style.scss $(BUILD_DIR)
 	mkdir -p `dirname $(CSS)`
-	sass --style expanded $(SCSS) $(CSS)
+	sassc --style expanded $(SCSS) $(CSS)
 
 
 js: $(JS_DIR) $(JS_SRC)
