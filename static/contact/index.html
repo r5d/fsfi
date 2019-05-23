@@ -18,12 +18,13 @@
                 <div class="column is-three-fifths">
 
                     <form class="contact-form" method="post"
-                          action="/contact/submit">
+                          action="/contact/submit/">
 
                         <div class="field">
                             <label class="label name">Name</label>
                             <div class="control">
-                                <input name="name" class="input" type="text">
+                                <input name="name" class="input" type="text"
+                                       placeholder="Name">
                             </div>
                         </div>
 
@@ -31,15 +32,7 @@
                             <label class="label email">Email</label>
                             <div class="control">
                                 <input name="email" class="input" type="email"
-                                       required>
-                            </div>
-                        </div>
-
-                        <div class="field">
-                            <label class="label subject">Subject</label>
-                            <div class="control">
-                                <input name="subject" class="input" type="text"
-                                       required>
+                                       placeholder="Email" required>
                             </div>
                         </div>
 
@@ -47,7 +40,7 @@
                             <label class="label msg">Message</label>
                             <div class="control">
                                 <textarea name="msg" class="textarea"
-                                          required></textarea>
+                                          placeholder="Message" required></textarea>
                             </div>
                         </div>
 
