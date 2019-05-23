@@ -62,4 +62,4 @@ function post() {
 }
 
 $result = post();
-include(__DIR__ . '/ack.html');
+include(__DIR__ . '/submit.html');
