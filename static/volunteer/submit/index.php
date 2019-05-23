@@ -48,7 +48,7 @@ function post() {
     }
 
     $sok = true;
-    if (empty($error)) {
+    if (empty($errors)) {
         $sok = send($n, $e, $m);
     }
     if (!$sok) {
