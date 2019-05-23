@@ -50,7 +50,7 @@ function post() {
     $sok = true;
     if (empty($error)) {
         $sok = send($n, $e, $m);
-    }$sok = false;
+    }
     if (!$sok) {
         $errors[] = 'Unable to process your submission.';
     }
