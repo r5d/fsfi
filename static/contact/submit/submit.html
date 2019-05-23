@@ -1,0 +1,46 @@
+<!--#include virtual="/includes/html-open.html"-->
+
+<!--#include virtual="/includes/header-open.html"-->
+<title>Submit &mdash; Contact &mdash; Free Software Foundation India</title>
+<!--#include virtual="/includes/header-close.html"-->
+
+<!--#include virtual="/includes/body-open.html"-->
+<!--#include virtual="/includes/navbar.html"-->
+
+<div class="container main">
+    <section class="section">
+        <div class="content">
+            <header>
+                <h1>Contact</h1>
+            </header>
+
+            <div class="columns">
+                <div class="column is-three-fifths">
+
+                    <?php if ($result['ok']) { ?>
+                        <p>We'll get back to you soon!</p>
+                    <?php } else { ?>
+                        <p>Oops! There were some issues:</p>
+
+                        <ul>
+                            <?php foreach ($result['errors'] as $e) { ?>
+                                <li><?=$e?></li>
+                            <?php } ?>
+                        </ul>
+
+                        <a class="button is-link" href="/contact">Try again</a>
+                    <?php } ?>
+
+
+                </div> <!-- end column -->
+            </div> <!-- end columns -->
+
+        </div>
+    </section>
+
+</div>
+
+<!--#include virtual="/includes/footer.html"-->
+<!--#include virtual="/includes/js.html"-->
+<!--#include virtual="/includes/body-close.html"-->
+<!--#include virtual="/includes/html-close.html"-->
