@@ -26,6 +26,6 @@ These tools are needed to build the site:
 
 ## Building
 
-Just do:
+To build the site, just do:
 
     make
