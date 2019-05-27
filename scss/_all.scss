@@ -12,6 +12,7 @@ $fsfi-lbrown: rgb(253, 203, 50);
 // Link colors
 $fsfi-link-color: $fsfi-dbrown;
 $fsfi-link-visited-color: rgb(183, 79, 28);
+$text: $fsfi-dark !default;
 $link: $fsfi-link-color !default;
 $link-invert: findColorInvert($fsfi-link-color) !default;
 $link-visited: $fsfi-link-visited-color !default;
