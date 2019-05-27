@@ -32,13 +32,6 @@ body {
 .articles {
     .wrapper { @include block-border(2px); }
 
-    a {
-        color: $black;
-    }
-    a:hover {
-        color: $fsfi-dbrown;
-    }
-
     .title {
         display: inline-block;
         margin-bottom: 0px;
