@@ -1,7 +1,7 @@
 // Mixins.
 
 @mixin block-border($width) {
-    border: $width solid $fsfi-dbrown;
+    border: $width solid $fsfi-dark;
     padding: 5px 20px 15px 20px;
 }
 
@@ -45,7 +45,7 @@ body {
     }
 
     .title span {
-        color: $fsfi-dbrown;
+        color: $fsfi-dark;
         font-size: 1.3rem;
         text-transform: uppercase;
     }
@@ -54,7 +54,7 @@ body {
 // Feed Icon
 .feed-icon {
     content: url('/assets/img/feed.svg');
-    background-color: $fsfi-dbrown;
+    background-color: $fsfi-dark;
     max-width: 17px;
     border-radius: 3px;
     margin-left: 2px;
@@ -62,7 +62,7 @@ body {
 
 // Join
 .fellowship-type {
-    border: 2px solid $fsfi-dbrown;
+    border: 2px solid $fsfi-dark;
     margin-bottom: 15px;
 
     .content header {
@@ -100,7 +100,7 @@ body {
 
             .date {
                 display: inline-block;
-                border-left: 1px solid $fsfi-lbrown;
+                border-left: 1px solid $fsfi-light;
                 padding-left: 10px;
             }
 
