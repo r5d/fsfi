@@ -34,6 +34,22 @@ nav {
     a {
         border-bottom: 0px;
     }
+
+    @include until($desktop - 1) {
+        img.logo {
+            margin-top: 0px;
+            max-width: 300px;
+            max-height: 78px;
+        }
+    }
+
+    @include desktop {
+        img.logo {
+            margin-top: 15px;
+            max-width: 400px;
+            max-height:104px;
+        }
+    }
 }
 
 
