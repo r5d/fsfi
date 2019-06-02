@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+// Font
+@font-face {
+  font-family: Roboto;
+  src: url('../font/roboto/RobotoCondensed-Regular.ttf');
+}
+
 @import "../vendor/bulma-0.7.4/sass/utilities/functions.sass";
 
 $navbar-item-img-max-height: 9.75rem !default;
