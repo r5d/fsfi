@@ -29,3 +29,5 @@ These tools are needed to build the site:
 To build the site, just do:
 
     make
+
+The site will be generated at `_build`.
