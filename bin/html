@@ -9,6 +9,7 @@ import datetime
 import os
 import os.path
 import re
+import stat as st
 import subprocess as subp
 import sys
 
@@ -65,6 +66,10 @@ def write(p, c):
 
     with open(p, 'w') as f:
         f.write(c)
+
+    os.chmod(p, st.S_IRUSR | st.S_IWUSR | st.S_IXUSR
+             | st.S_IRGRP | st.S_IXGRP
+             | st.S_IROTH | st.S_IXOTH)
 
 
 def slug(p):
