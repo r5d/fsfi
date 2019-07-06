@@ -9,7 +9,7 @@
  */
 
 function to() {
-    return 's@cygnus.ricketyspace.net';
+    return 'srikar@ninthfloor.org, nagarjun@gnowledge.org';
 }
 
 function email_valid($e) {
