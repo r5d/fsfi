@@ -53,5 +53,5 @@ clean:
 
 
 upload: site
-	rsync -avz _build/ w@lyra:~/fsfi/
+	rsync -avz _build/ gnu.org.in:/var/www/fsfi/
 .PHONY: upload
