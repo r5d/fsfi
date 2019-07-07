@@ -9,7 +9,7 @@
  */
 
 function to() {
-    return 'srikar@ninthfloor.org, nagarjun@gnowledge.org';
+    return 's@ricketyspace.net';
 }
 
 function email_valid($e) {
@@ -43,6 +43,7 @@ function post() {
     if (empty($m)) {
         $errors[] = em_fw('Message is required');
     }
+    $errors[] = 'This form is disabled for now';
 
     $sok = true;
     if (empty($errors)) {
