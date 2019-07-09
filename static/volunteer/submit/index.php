@@ -35,6 +35,7 @@ function post() {
     $n = $_POST['name'];
     $e = $_POST['email'];
     $m = $_POST['msg'];
+    $c = $_POST['c'];
 
     $errors = [];
     if (empty($n)) {
@@ -45,6 +46,9 @@ function post() {
     }
     if (empty($m)) {
         $errors[] = em_fw('Message is required');
+    }
+    if ($c !== '42') {
+        $errors[] = '41 + 1 is not \'' . $c . '\'';
     }
     $errors[] = 'This form is disabled for now';
 
