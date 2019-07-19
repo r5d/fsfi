@@ -6,6 +6,7 @@
   src: url('../font/roboto/RobotoCondensed-Regular.ttf');
 }
 
+// Bulma - Functions.
 @import "../vendor/bulma-0.7.4/sass/utilities/functions.sass";
 
 $navbar-item-img-max-height: 9.75rem !default;
@@ -29,12 +30,32 @@ $section-padding: 1rem 1.5rem !default;
 $footer-background-color: rgb(253, 253, 253);
 $footer-padding: 3rem 1.5rem 3rem;
 
-// Bulma
-@import "../vendor/bulma-0.7.4/sass/utilities/_all.sass";
+// Bulma - Utilities.
+@import "../vendor/bulma-0.7.4/sass/utilities/initial-variables.sass";
+@import "../vendor/bulma-0.7.4/sass/utilities/derived-variables.sass";
+@import "../vendor/bulma-0.7.4/sass/utilities/mixins.sass";
+@import "../vendor/bulma-0.7.4/sass/utilities/controls.sass";
+
+// Bulma - Base.
 @import "../vendor/bulma-0.7.4/sass/base/_all.sass";
-@import "../vendor/bulma-0.7.4/sass/elements/_all.sass";
-@import "../vendor/bulma-0.7.4/sass/components/_all.sass";
-@import "../vendor/bulma-0.7.4/sass/grid/_all.sass";
+
+// Bulma - Elements
+@import "../vendor/bulma-0.7.4/sass/elements/button.sass";
+@import "../vendor/bulma-0.7.4/sass/elements/container.sass";
+@import "../vendor/bulma-0.7.4/sass/elements/content.sass";
+@import "../vendor/bulma-0.7.4/sass/elements/form.sass";
+@import "../vendor/bulma-0.7.4/sass/elements/table.sass";
+@import "../vendor/bulma-0.7.4/sass/elements/tag.sass";
+@import "../vendor/bulma-0.7.4/sass/elements/title.sass";
+
+
+// Bulma - Components
+@import "../vendor/bulma-0.7.4/sass/components/navbar.sass";
+
+// Bulma - Grid
+@import "../vendor/bulma-0.7.4/sass/grid/columns.sass";
+
+// Bulma - Layout
 @import "../vendor/bulma-0.7.4/sass/layout/_all.sass";
 
 @import "style.scss";
