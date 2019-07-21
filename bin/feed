@@ -14,7 +14,7 @@ import subprocess as subp
 import sys
 
 
-URL = 'https://fsfi.ricketyspace.net'
+URL = 'http://fsf.org.in'
 SECTIONS = ['news', 'article']
 
 F_PH = {
