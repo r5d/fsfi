@@ -24,6 +24,8 @@ function send($n, $e, $m) {
     return mail(to(),
                 $p . ' wants to volunteer for FSF India',
                 'Per says:' . PHP_EOL . PHP_EOL . $m
+              . PHP_EOL . PHP_EOL . '---' . PHP_EOL
+              . 'Message originating from ' . $_SERVER['REMOTE_ADDR']
     );
 }
 
