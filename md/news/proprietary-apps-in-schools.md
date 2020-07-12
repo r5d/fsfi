@@ -75,32 +75,32 @@ they are not happy with a service provider.
 
 We would like make following recommedations to the government.
 
-KITE under the Department of Education should be directed to setup
+1. KITE under the Department of Education should be directed to setup
 free software based e-learning and communication infrastructure for
 state government. This can include instant messaging, file-sharing
 systems, and e-learning platforms.
 
-Free software community expertise can be leveraged to setup
+2. Free software community expertise can be leveraged to setup
 infrastructure and train teachers. More than 25 people from the Free
 Software community have already volunteered to support the
 teachers<sup>[7](#fn-7)</sup>.
 
-Currently the videos are uploaded only on Youtube and Facebook. KITE
-should also consider offering PeerTube as another option, which is
-Free Software powered and offers better privacy to users. Additionally
-it saves cost of live streaming via KITE website by sharing bandwidth
-among the users<sup>[8](#fn-8)</sup>. If needed PeerTube instance at
-<https://videos.fsci.in> operated by Free Software Community of India
-can be used provided the content is licensed under Creative Commons
-license which allows sharing freely.
+3. Currently the videos are uploaded only on Youtube and
+Facebook. KITE should also consider offering PeerTube as another
+option, which is Free Software powered and offers better privacy to
+users. Additionally it saves cost of live streaming via KITE website
+by sharing bandwidth among the users<sup>[8](#fn-8)</sup>. If needed
+PeerTube instance at <https://videos.fsci.in> operated by Free
+Software Community of India can be used provided the content is
+licensed under Creative Commons license which allows sharing freely.
 
-It was noted that the teachers who give classes through first bell
+4. It was noted that the teachers who give classes through first bell
 program are recommending proprietary services as tools for
 communication. This will create confusion for both students and
 parents that they might think they are required for the student's
 education. This confusion should be prevented.  
 
-A long-term plan for software and infrastructure adoption should be
+5. A long-term plan for software and infrastructure adoption should be
 discussed. This will help to avoid being depended on proprietary
 solutions in an emergency as we will be well prepared. Such
 discussions, with the adoption of free software solutions, can design
