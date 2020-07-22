@@ -3,6 +3,8 @@
 #
 # Markdown -- A text-to-HTML conversion tool for web writers
 #
+# SPDX-License-Identifier: BSD-3-Clause
+#
 # Copyright (c) 2004 John Gruber
 # <http://daringfireball.net/projects/markdown/>
 #
