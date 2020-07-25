@@ -146,3 +146,15 @@ a.feed {
         }
     }
 }
+
+// i18n
+.lang {
+    display: flex;
+    flex-direction: row-reverse;
+
+    p {
+        border: 1px solid $fsfi-light;
+        padding: 1px 8px 1px 8px;
+    }
+}
+
