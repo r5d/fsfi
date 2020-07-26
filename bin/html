@@ -158,6 +158,24 @@ def html(sec, f):
     return s, h, l
 
 
+def langmap(sec):
+    lm = {}
+    for f in files(sec):
+        s, l = slug(f.path)
+
+        if not s in lm:
+            lm[s] = []
+
+        if not l:
+            lm[s].append('en')
+        else:
+            lm[s].append(l)
+
+        lm[s].sort()
+
+    return lm
+
+
 def process(sec):
     for f in files(sec):
         s, h, l = html(sec, f)
