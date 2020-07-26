@@ -138,6 +138,13 @@ def markdown(c):
     return r.stdout
 
 
+def lhref(sec, s, l):
+    if l == 'en':
+        return '<a href="/{}/{}">{}</a>'.format(sec, s, l)
+    else:
+        return '<a href="/{}/{}/{}">{}</a>'.format(sec, s, l, l)
+
+
 def html(sec, f):
     c = read(f.path)
     s, l = slug(f.path)
