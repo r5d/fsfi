@@ -73,12 +73,12 @@ def write(p, c):
 
 
 def slug(p):
-    m = re.search(r'([a-zA-Z\-]+)\.md', p)
+    m = re.search(r'([a-zA-Z\-]+)(\.([a-z]{2}))?\.md', p)
 
     if not m:
         err('Unable to get slug')
 
-    return m.group(1)
+    return m.group(1, 3)
 
 
 def title(c):
@@ -140,7 +140,7 @@ def markdown(c):
 
 def html(sec, f):
     c = read(f.path)
-    s = slug(f.path)
+    s, l = slug(f.path)
 
     t = title(c)
     a = author(c)
@@ -155,13 +155,16 @@ def html(sec, f):
     if author:
         h = h.replace(PH['author'], a, 1)
 
-    return s, h
+    return s, h, l
 
 
 def process(sec):
     for f in files(sec):
-        s, h = html(sec, f)
-        write('/'.join(['_build', sec, s, 'index.html']), h)
+        s, h, l = html(sec, f)
+        if not l:
+            write('/'.join(['_build', sec, s, 'index.html']), h)
+        else:
+            write('/'.join(['_build', sec, s, l, 'index.html']), h)
 
 
 def run():
