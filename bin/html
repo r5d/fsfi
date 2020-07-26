@@ -158,7 +158,7 @@ def langhtml(sec, s, lng, lngs):
     return template('lang').replace(PH['lang'], ' | '.join(lsh), 1)
 
 
-def html(sec, f):
+def html(sec, f, lm):
     c = read(f.path)
     s, l = slug(f.path)
 
@@ -174,6 +174,9 @@ def html(sec, f):
 
     if author:
         h = h.replace(PH['author'], a, 1)
+
+    if len(lm[s]) > 1:
+        h = h.replace(PH['lang'], langhtml(sec, s, l, lm[s]), 1)
 
     return s, h, l
 
@@ -197,8 +200,10 @@ def langmap(sec):
 
 
 def process(sec):
+    lm = langmap(sec)
+
     for f in files(sec):
-        s, h, l = html(sec, f)
+        s, h, l = html(sec, f, lm)
         if not l:
             write('/'.join(['_build', sec, s, 'index.html']), h)
         else:
