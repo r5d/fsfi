@@ -146,6 +146,18 @@ def lhref(sec, s, l):
         return '<a href="/{}/{}/{}">{}</a>'.format(sec, s, l, l)
 
 
+def langhtml(sec, s, lng, lngs):
+    lsh = []
+
+    for l in lngs:
+        if (l == 'en' and lng is None) or (l == lng):
+            lsh.append(l)
+        else:
+            lsh.append(lhref(sec, s, l))
+
+    return template('lang').replace(PH['lang'], ' | '.join(lsh), 1)
+
+
 def html(sec, f):
     c = read(f.path)
     s, l = slug(f.path)
