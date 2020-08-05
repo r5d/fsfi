@@ -86,7 +86,7 @@
 
 ## അനുബന്ധം
 
-1. <span id="fn-1">https://education.kerala.gov.in/wp-content/uploads/2020/05/GO-Online-Class-First-Bell.pdf
+1. <span id="fn-1"><https://education.kerala.gov.in/wp-content/uploads/2020/05/GO-Online-Class-First-Bell.pdf></span>
 
 2. <span id="fn-2">https://www.doolnews.com/online-learning-parents-and-teachers-need-attention-education-department-guidelines-454.html (we have a copy of the document referenced in this article) ഈ ലേഖനത്തില്‍ പറയുന്ന മാര്‍ഗരേഖയുെടെ പകര്‍പ്പ് ഞങ്ങളുടെ കയ്യിലുണ്ട്.
 
