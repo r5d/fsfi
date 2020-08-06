@@ -90,14 +90,14 @@
 
 2. <span id="fn-2"><https://www.doolnews.com/online-learning-parents-and-teachers-need-attention-education-department-guidelines-454.html> (we have a copy of the document referenced in this article) ഈ ലേഖനത്തില്‍ പറയുന്ന മാര്‍ഗരേഖയുെടെ പകര്‍പ്പ് ഞങ്ങളുടെ കയ്യിലുണ്ട്.</span>
 
-3. <span id="fn-3">https://www.fsf.org/facebook</span>
+3. <span id="fn-3"><https://www.fsf.org/facebook></span>
 
-4. <span id="fn-4">https://www.reuters.com/article/us-facebook-cambridge-analytica-factbox/factbox-who-is-cambridge-analytica-and-what-did-it-do-idUSKBN1GW07F</span>
+4. <span id="fn-4"><https://www.reuters.com/article/us-facebook-cambridge-analytica-factbox/factbox-who-is-cambridge-analytica-and-what-did-it-do-idUSKBN1GW07F></span>
 
-5. <span id="fn-5">https://www.f-droid.org/en/packages/im.quicksy.client/</span>
+5. <span id="fn-5"><https://www.f-droid.org/en/packages/im.quicksy.client/></span>
 
-6. <span id="fn-6">https://switching.software/replace/whatsapp/</span>
+6. <span id="fn-6"><https://switching.software/replace/whatsapp/></span>
 
-7. <span id="fn-7">https://codema.in/d/LDwsanKx/open-letter-to-kerala-it-school-kite-director-on-forcing-teachers-students-and-parents-to-use-whatsapp/5</span>
+7. <span id="fn-7"><https://codema.in/d/LDwsanKx/open-letter-to-kerala-it-school-kite-director-on-forcing-teachers-students-and-parents-to-use-whatsapp/5></span>
 
-8. <span id="fn-8">https://en.wikipedia.org/wiki/PeerTube</span>
+8. <span id="fn-8"><https://en.wikipedia.org/wiki/PeerTube></span>
