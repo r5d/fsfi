@@ -78,7 +78,7 @@ nav {
     }
 }
 
-// Feed
+// Feed, Social
 a.feed {
     border-bottom: 0px;
 }
@@ -90,6 +90,33 @@ a.feed {
     border-radius: 3px;
     margin-left: 2px;
 }
+
+.mastadon-icon {
+    content: url('/assets/img/mastadon.svg');
+    background-color: $fsfi-dark;
+    max-width: 17px;
+    border-radius: 3px;
+    margin-left: 2px;
+}
+
+.follow-block {
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0 0 0 0;
+
+        li {
+            display: inline;
+            margin-top: 1px;
+
+            a {
+                border-bottom: 0px;
+            }
+        }
+    }
+}
+
 
 // Join
 .fellowship-type {
