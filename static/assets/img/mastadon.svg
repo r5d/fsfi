@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="mastadon.svg"
+   id="svg62"
+   version="1.1"
+   viewBox="0 0 120 120"
+   height="128"
+   width="128">
+  <title
+     id="title1029">Free Software Foundation's Mastadon Icon</title>
+  <metadata
+     id="metadata68">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Free Software Foundation's Mastadon Icon</dc:title>
+        <dc:date>2020-08-08</dc:date>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>mastadon fsfi</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>Free Software Foundation's Mastadon Icon.
+
+Derived from the icon from https://commons.wikimedia.org/wiki/File:Mastodon_Logotype_(Simple).svg</dc:description>
+        <cc:license
+           rdf:resource="https://www.gnu.org/licenses/agpl-3.0.txt" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:creator>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs66" />
+  <sodipodi:namedview
+     units="px"
+     inkscape:current-layer="svg62"
+     inkscape:window-maximized="1"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="63.122392"
+     inkscape:cx="22.128933"
+     inkscape:zoom="3.6203867"
+     showgrid="false"
+     id="namedview64"
+     inkscape:window-height="766"
+     inkscape:window-width="1364"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
+  <g
+     transform="matrix(0.95204768,0,0,0.95204768,4.5816302,4.3056364)"
+     id="g902">
+    <path
+       fill="#2b90d9"
+       d="M 101.90608,67.117387 C 100.63597,73.651546 90.530563,80.80254 78.924483,82.188422 72.872414,82.910558 66.913668,83.574305 60.559669,83.282855 50.168295,82.806755 41.968782,80.80254 41.968782,80.80254 c 0,1.01159 0.06238,1.97477 0.187146,2.875569 1.350948,10.255131 10.168794,10.869474 18.521518,11.155933 8.430577,0.28845 15.937399,-2.078575 15.937399,-2.078575 l 0.346346,7.621603 c 0,0 -5.896863,3.16652 -16.401522,3.74892 -5.79256,0.3184 -12.984975,-0.14572 -21.362153,-2.36303 C 21.028831,96.954035 17.904232,77.587112 17.426135,57.936228 c -0.145724,-5.83448 -0.05589,-11.33609 -0.05589,-15.937399 0,-20.094048 13.165634,-25.983924 13.165634,-25.983924 6.638462,-3.048742 18.029448,-4.330821 29.871581,-4.427638 h 0.290951 c 11.842133,0.09682 23.240605,1.378896 29.878568,4.427638 0,0 13.165131,5.889876 13.165131,25.983924 0,0 0.16519,14.825499 -1.83603,25.118558"
+       id="path58"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke-width:0.399246" />
+    <path
+       style="fill:#ca6634;fill-opacity:1;stroke-width:0.399246"
+       fill="#ffffff"
+       d="M 88.21294,43.557685 V 67.888231 H 78.573646 V 44.272834 c 0,-4.978098 -2.094544,-7.504826 -6.284132,-7.504826 -4.63225,0 -6.953866,2.997339 -6.953866,8.924145 V 58.618239 H 55.753247 V 45.692153 c 0,-5.926806 -2.322115,-8.924145 -6.954365,-8.924145 -4.189588,0 -6.284132,2.526728 -6.284132,7.504826 V 67.888231 H 32.875456 V 43.557685 c 0,-4.972608 1.266109,-8.924145 3.809306,-11.847624 2.622546,-2.923478 6.05706,-4.422148 10.320507,-4.422148 4.932683,0 8.668129,1.895919 11.137963,5.688256 l 2.400966,4.024899 2.401465,-4.024899 c 2.469335,-3.792337 6.204781,-5.688256 11.137963,-5.688256 4.262948,0 7.697462,1.49867 10.320507,4.422148 2.542698,2.923479 3.808807,6.875016 3.808807,11.847624"
+       id="path60" />
+  </g>
+</svg>
