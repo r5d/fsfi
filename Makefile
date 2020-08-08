@@ -17,7 +17,7 @@ static: $(BUILD_DIR)
 
 
 html:
-	@python3 ./bin/html
+	python3 ./bin/html
 .PHONY: html
 
 feed:
