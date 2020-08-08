@@ -21,7 +21,7 @@ html:
 .PHONY: html
 
 feed:
-	@python3 ./bin/feed
+	python3 ./bin/feed
 .PHONY: feed
 
 
