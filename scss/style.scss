@@ -108,6 +108,9 @@ a.feed {
 }
 
 .follow-block {
+    p:not(:last-child) {
+        margin-bottom: 5px;
+    }
     ul {
         display: flex;
         justify-content: center;
