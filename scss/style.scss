@@ -99,6 +99,14 @@ a.feed {
     margin-left: 2px;
 }
 
+.email-icon {
+    content: url('/assets/img/email.svg');
+    background-color: $fsfi-dark;
+    max-width: 17px;
+    border-radius: 3px;
+    margin-left: 2px;
+}
+
 .follow-block {
     ul {
         display: flex;
