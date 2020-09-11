@@ -49,6 +49,7 @@ $(BUILD_DIR):
 
 clean:
 	rm -rf $(BUILD_DIR)/
+	rm -rf vendor/__pycache__
 .PHONY: clean
 
 
