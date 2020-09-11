@@ -17,7 +17,7 @@ static: $(BUILD_DIR)
 
 
 html:
-	python3 ./bin/html
+	PYTHONPATH=vendor python3 ./bin/html
 .PHONY: html
 
 feed:
