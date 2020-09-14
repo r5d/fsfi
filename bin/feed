@@ -126,7 +126,7 @@ def markdown(c):
         r = mistune.markdown(c, False, parse_block_html=True, parse_inline_html=True)
 
     except Exception as e:
-        p('Markdown failed for {}'.format(c))
+        err('Markdown parsing failed for {}'.format(e))
 
     return r
 
