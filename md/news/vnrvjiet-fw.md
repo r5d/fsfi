@@ -14,12 +14,10 @@ VGLUG.
         <img src="/news/images/vnrvjiet_seminar_00-768.jpg"
             alt="[ IMG - vnrvjiet_seminar_00-768.jpg ]" />
     </div>
-
     <div class="column">
         <img src="/news/images/vnrvjiet_seminar_01-768.jpg"
             alt="[ IMG - vnrvjiet_seminar_01-768.jpg ]" />
     </div>
-
     <div class="column">
         <img src="/news/images/vnrvjiet_seminar_02-768.jpg"
             alt="[ IMG - vnrvjiet_seminar_02-768.jpg ]" />
