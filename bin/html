@@ -10,9 +10,8 @@ import os
 import os.path
 import re
 import stat as st
-import subprocess as subp
 import sys
-
+import mistune
 
 SECTIONS = ['news', 'article']
 
@@ -128,15 +127,12 @@ def datefmt(d):
 
 def markdown(c):
     try:
-        r = subp.run(['bin/markdown'],
-                     input=c,
-                     stdout=subp.PIPE,
-                     check=True,
-                     universal_newlines=True)
+        r = mistune.markdown(c, False, parse_block_html=True, parse_inline_html=True)
+
     except Exception as e:
         p('Markdown failed for {}'.format(c))
 
-    return r.stdout
+    return r
 
 
 def lhref(sec, s, l):

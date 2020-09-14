@@ -20,7 +20,6 @@ These tools are needed to build the site:
   - make
   - [sassc][sassc]
   - python3
-  - perl (`bin/markdown` needs it :|)
 
 [sassc]: https://github.com/sass/sassc
 
