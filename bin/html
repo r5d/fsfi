@@ -14,39 +14,39 @@ import sys
 
 import mistune
 
-SECTIONS = ['news', 'article']
+SECTIONS = ["news", "article"]
 
 # placeholders
 PH = {
-   'title': '<!-- ITEM-TITLE -->',
-   'author': '<!-- AUTHOR -->',
-   'date': '<!-- DATE -->',
-   'content': '<!-- MAIN-CONTENT -->',
-   'lang': '<!-- LANG-LIST -->'
+    "title": "<!-- ITEM-TITLE -->",
+    "author": "<!-- AUTHOR -->",
+    "date": "<!-- DATE -->",
+    "content": "<!-- MAIN-CONTENT -->",
+    "lang": "<!-- LANG-LIST -->",
 }
 
 
 def err(s):
-    print('Error: {}'.format(s))
+    print("Error: {}".format(s))
     sys.exit(1)
 
 
 def fok(f):
     p = os.path.basename(f.path)
 
-    if re.search(r'(^[\.\#])|(~$)', p):
+    if re.search(r"(^[\.\#])|(~$)", p):
         return False
 
     return True
 
 
 def files(sec):
-    files = os.scandir('md' + '/' + sec)
+    files = os.scandir("md" + "/" + sec)
 
     fs = []
     for f in files:
         if not fok(f):
-            print('Ignoring {}'.format(f.path))
+            print("Ignoring {}".format(f.path))
         else:
             fs.append(f)
 
@@ -65,65 +65,72 @@ def write(p, c):
     if not os.path.exists(d):
         os.makedirs(d)
 
-    with open(p, 'w') as f:
+    with open(p, "w") as f:
         f.write(c)
 
-    os.chmod(p, st.S_IRUSR | st.S_IWUSR | st.S_IXUSR
-             | st.S_IRGRP | st.S_IXGRP
-             | st.S_IROTH | st.S_IXOTH)
+    os.chmod(
+        p,
+        st.S_IRUSR
+        | st.S_IWUSR
+        | st.S_IXUSR
+        | st.S_IRGRP
+        | st.S_IXGRP
+        | st.S_IROTH
+        | st.S_IXOTH,
+    )
 
 
 def slug(p):
-    m = re.search(r'([a-zA-Z\-]+)(\.([a-z]{2}))?\.md', p)
+    m = re.search(r"([a-zA-Z\-]+)(\.([a-z]{2}))?\.md", p)
 
     if not m:
-        err('Unable to get slug')
+        err("Unable to get slug")
 
     return m.group(1, 3)
 
 
 def title(c):
-    m = re.search(r'^\# (.+)$', c, re.M)
+    m = re.search(r"^\# (.+)$", c, re.M)
 
     if not m:
-        err('Title not found')
+        err("Title not found")
 
     return m.group(1)
 
 
 def author(c):
-    m = re.search(r'<!-- author: ([\w\. ]+) -->', c)
+    m = re.search(r"<!-- author: ([\w\. ]+) -->", c)
 
     if not m:
-        return ''
+        return ""
 
-    return 'By ' + m.group(1)
+    return "By " + m.group(1)
 
 
 def date(c):
-    m = re.search(r'pubdate: ([0-9]{8})', c)
+    m = re.search(r"pubdate: ([0-9]{8})", c)
 
     if not m:
-        err('Publication date not found')
+        err("Publication date not found")
 
     return m.group(1)
 
 
 def content(c):
-    m = re.search(r'^\# (.+)$', c, re.M)
+    m = re.search(r"^\# (.+)$", c, re.M)
 
     if not m:
-        err('Unable to slurp content')
+        err("Unable to slurp content")
 
-    return c[m.end():]
+    return c[m.end() :]
 
 
 def template(type):
-    return read('templates/html/{}.html'.format(type))
+    return read("templates/html/{}.html".format(type))
 
 
 def datefmt(d):
-    return datetime.datetime.strptime(d, '%Y%m%d').strftime('%B %d, %Y')
+    return datetime.datetime.strptime(d, "%Y%m%d").strftime("%B %d, %Y")
 
 
 def markdown(c):
@@ -131,13 +138,13 @@ def markdown(c):
         r = mistune.markdown(c, False, parse_block_html=True, parse_inline_html=True)
 
     except Exception as e:
-        err('Markdown parsing failed: {}'.format(e))
+        err("Markdown parsing failed: {}".format(e))
 
     return r
 
 
 def lhref(sec, s, l):
-    if l == 'en':
+    if l == "en":
         return '<a href="/{}/{}">{}</a>'.format(sec, s, l)
     else:
         return '<a href="/{}/{}/{}">{}</a>'.format(sec, s, l, l)
@@ -147,12 +154,12 @@ def langhtml(sec, s, lng, lngs):
     lsh = []
 
     for l in lngs:
-        if (l == 'en' and lng is None) or (l == lng):
+        if (l == "en" and lng is None) or (l == lng):
             lsh.append(l)
         else:
             lsh.append(lhref(sec, s, l))
 
-    return template('lang').replace(PH['lang'], ' | '.join(lsh), 1)
+    return template("lang").replace(PH["lang"], " | ".join(lsh), 1)
 
 
 def html(sec, f, lm):
@@ -165,15 +172,15 @@ def html(sec, f, lm):
     c = content(c)
 
     h = template(sec)
-    h = h.replace(PH['title'], t, 2)
-    h = h.replace(PH['date'], datefmt(d), 1)
-    h = h.replace(PH['content'], markdown(c), 1)
+    h = h.replace(PH["title"], t, 2)
+    h = h.replace(PH["date"], datefmt(d), 1)
+    h = h.replace(PH["content"], markdown(c), 1)
 
     if author:
-        h = h.replace(PH['author'], a, 1)
+        h = h.replace(PH["author"], a, 1)
 
     if len(lm[s]) > 1:
-        h = h.replace(PH['lang'], langhtml(sec, s, l, lm[s]), 1)
+        h = h.replace(PH["lang"], langhtml(sec, s, l, lm[s]), 1)
 
     return s, h, l
 
@@ -187,7 +194,7 @@ def langmap(sec):
             lm[s] = []
 
         if not l:
-            lm[s].append('en')
+            lm[s].append("en")
         else:
             lm[s].append(l)
 
@@ -202,9 +209,9 @@ def process(sec):
     for f in files(sec):
         s, h, l = html(sec, f, lm)
         if not l:
-            write('/'.join(['_build', sec, s, 'index.html']), h)
+            write("/".join(["_build", sec, s, "index.html"]), h)
         else:
-            write('/'.join(['_build', sec, s, l, 'index.html']), h)
+            write("/".join(["_build", sec, s, l, "index.html"]), h)
 
 
 def run():
