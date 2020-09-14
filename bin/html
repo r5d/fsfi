@@ -136,7 +136,6 @@ def datefmt(d):
 def markdown(c):
     try:
         r = mistune.markdown(c, False, parse_block_html=True, parse_inline_html=True)
-
     except Exception as e:
         err("Markdown parsing failed: {}".format(e))
 
