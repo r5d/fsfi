@@ -12,48 +12,48 @@ import os.path
 import re
 import sys
 
-import mistune 
+import mistune
 
-URL = 'http://fsf.org.in'
-SECTIONS = ['news', 'article']
+URL = "http://fsf.org.in"
+SECTIONS = ["news", "article"]
 
 F_PH = {
-    'name': '<!-- Feed Name -->',
-    'link': '<!-- Feed Link -->',
-    'updated': '<!-- Feed Updated -->',
-    'entries': '<!-- Entries -->'
+    "name": "<!-- Feed Name -->",
+    "link": "<!-- Feed Link -->",
+    "updated": "<!-- Feed Updated -->",
+    "entries": "<!-- Entries -->",
 }
 
 E_PH = {
-    'id': '<!-- Entry Id -->',
-    'title': '<!-- Entry Title -->',
-    'link': '<!-- Entry Link -->',
-    'updated': '<!-- Entry Updated -->',
-    'content': '<!-- Entry Content -->'
+    "id": "<!-- Entry Id -->",
+    "title": "<!-- Entry Title -->",
+    "link": "<!-- Entry Link -->",
+    "updated": "<!-- Entry Updated -->",
+    "content": "<!-- Entry Content -->",
 }
 
 
 def err(s):
-    print('Error: {}'.format(s))
+    print("Error: {}".format(s))
     sys.exit(1)
 
 
 def fok(f):
     p = os.path.basename(f.path)
 
-    if re.search(r'(^[\.\#])|(~$)', p):
+    if re.search(r"(^[\.\#])|(~$)", p):
         return False
 
     return True
 
 
 def files(sec):
-    files = os.scandir('md' + '/' + sec)
+    files = os.scandir("md" + "/" + sec)
 
     fs = []
     for f in files:
         if not fok(f):
-            print('Ignoring {}'.format(f.path))
+            print("Ignoring {}".format(f.path))
         else:
             fs.append(f)
 
@@ -72,53 +72,53 @@ def write(p, c):
     if not os.path.exists(d):
         os.makedirs(d)
 
-    with open(p, 'w') as f:
+    with open(p, "w") as f:
         f.write(c)
 
 
 def slug(p):
-    m = re.search(r'(([a-zA-Z\-]+)(\.([a-z]{2}))?)\.md', p)
+    m = re.search(r"(([a-zA-Z\-]+)(\.([a-z]{2}))?)\.md", p)
 
     if not m:
-        err('Unable to get slug')
+        err("Unable to get slug")
 
     return m.group(1), m.group(2), m.group(4)
 
 
 def template(type):
-    return read('templates/atom/{}.atom'.format(type))
+    return read("templates/atom/{}.atom".format(type))
 
 
 def title(c):
-    m = re.search(r'^\# (.+)$', c, re.M)
+    m = re.search(r"^\# (.+)$", c, re.M)
 
     if not m:
-        err('Title not found')
+        err("Title not found")
 
     return m.group(1)
 
 
 def elink(sec, s, l):
     if l is None:
-        return '/'.join([URL, sec, s])
+        return "/".join([URL, sec, s])
     else:
-        return '/'.join([URL, sec, s, l])
+        return "/".join([URL, sec, s, l])
 
 
 def flink(sec):
-    return '/'.join([URL, sec, 'feed.atom'])
+    return "/".join([URL, sec, "feed.atom"])
 
 
 def time(c):
-    m = re.search(r'pubdate: ([0-9]{8})', c)
+    m = re.search(r"pubdate: ([0-9]{8})", c)
 
     if not m:
-        err('Publication date not found')
+        err("Publication date not found")
 
     d = m.group(1)
-    d = datetime.datetime.strptime(d,'%Y%m%d').strftime('%Y-%m-%d')
+    d = datetime.datetime.strptime(d, "%Y%m%d").strftime("%Y-%m-%d")
 
-    return d + 'T00:00:00Z'
+    return d + "T00:00:00Z"
 
 
 def markdown(c):
@@ -126,26 +126,26 @@ def markdown(c):
         r = mistune.markdown(c, False, parse_block_html=True, parse_inline_html=True)
 
     except Exception as e:
-        err('Markdown parsing failed for {}'.format(e))
+        err("Markdown parsing failed for {}".format(e))
 
     return r
 
 
 def massage(c):
     c = html.escape(c)
-    c = c.replace('\n', '&#xA;')
-    c = re.sub(r' +', ' ', c)
+    c = c.replace("\n", "&#xA;")
+    c = re.sub(r" +", " ", c)
 
     return c
 
 
 def content(c):
-    m = re.search(r'^\# (.+)$', c, re.M)
+    m = re.search(r"^\# (.+)$", c, re.M)
 
     if not m:
-        err('Unable to slurp content')
+        err("Unable to slurp content")
 
-    c = c[m.end():]
+    c = c[m.end() :]
     c = markdown(c)
 
     return massage(c)
@@ -154,7 +154,7 @@ def content(c):
 def now():
     n = datetime.datetime.today()
 
-    return n.strftime('%Y-%m-%dT%H:%M:%SZ')
+    return n.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def entry(sec, f):
@@ -162,14 +162,14 @@ def entry(sec, f):
     u, s, l = slug(f.path)
 
     t = time(c)
-    id = t + ':' + u
+    id = t + ":" + u
 
-    e = template('entry')
-    e = e.replace(E_PH['id'], id, 1)
-    e = e.replace(E_PH['title'], title(c), 1)
-    e = e.replace(E_PH['link'], elink(sec, s, l), 1)
-    e = e.replace(E_PH['updated'], t, 1)
-    e = e.replace(E_PH['content'], content(c), 1)
+    e = template("entry")
+    e = e.replace(E_PH["id"], id, 1)
+    e = e.replace(E_PH["title"], title(c), 1)
+    e = e.replace(E_PH["link"], elink(sec, s, l), 1)
+    e = e.replace(E_PH["updated"], t, 1)
+    e = e.replace(E_PH["content"], content(c), 1)
 
     return id, e
 
@@ -185,11 +185,11 @@ def esort(esd):
 
 
 def feed(sec, es):
-    f = template('feed')
-    f = f.replace(F_PH['name'], sec, 2)
-    f = f.replace(F_PH['link'], flink(sec), 1)
-    f = f.replace(F_PH['updated'], now(), 1)
-    f = f.replace(F_PH['entries'], es, 1)
+    f = template("feed")
+    f = f.replace(F_PH["name"], sec, 2)
+    f = f.replace(F_PH["link"], flink(sec), 1)
+    f = f.replace(F_PH["updated"], now(), 1)
+    f = f.replace(F_PH["entries"], es, 1)
 
     return f
 
@@ -200,9 +200,9 @@ def process(sec):
         id, e = entry(sec, f)
         esd[id] = e
 
-    es = ''.join(esort(esd))
+    es = "".join(esort(esd))
 
-    write('/'.join(['_build', sec, 'feed.atom']), feed(sec, es))
+    write("/".join(["_build", sec, "feed.atom"]), feed(sec, es))
 
 
 def run():
@@ -210,5 +210,5 @@ def run():
         process(sec)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run()
