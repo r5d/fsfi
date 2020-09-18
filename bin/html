@@ -81,7 +81,7 @@ def write(p, c):
 
 
 def slug(p):
-    m = re.search(r"([a-zA-Z\-]+)(\.([a-z]{2}))?\.md", p)
+    m = re.search(r"([a-zA-Z\-\d]+)(\.([a-z]{2}))?\.md", p)
 
     if not m:
         err("Unable to get slug")
