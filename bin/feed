@@ -14,7 +14,7 @@ import sys
 
 import mistune
 
-URL = "http://fsf.org.in"
+URL = "https://fsf.org.in"
 SECTIONS = ["news", "article"]
 
 F_PH = {
