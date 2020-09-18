@@ -185,7 +185,7 @@ def esort(esd):
 
 def feed(sec, es):
     f = template("feed")
-    f = f.replace(F_PH["name"], sec, 2)
+    f = f.replace(F_PH["name"], sec.capitalize(), 2)
     f = f.replace(F_PH["link"], flink(sec), 1)
     f = f.replace(F_PH["updated"], now(), 1)
     f = f.replace(F_PH["entries"], es, 1)
