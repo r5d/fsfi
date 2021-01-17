@@ -19,14 +19,45 @@ function email_valid($e) {
     return false;
 }
 
+function conf() {
+    return json_decode(file_get_contents(
+        $_SERVER['DOCUMENT_ROOT'] . '/conf.json'
+    ));
+}
+
+function gl_new_issue($title, $desc) {
+    $conf = conf();
+
+    /**
+     * Unable to install php curl module on the current server. So
+     * commandline curl for now.
+     */
+    $cmd = sprintf("%s  -v   --request POST"
+                 . " --header 'Private-Token: %s'"
+                 . " %s/1047/issues"
+                 . " -d title='%s'"
+                 . " -d description='%s'",
+                   $conf->curl,
+                   $conf->token,
+                   $conf->api,
+                   urlencode($title),
+                   urlencode($desc));
+    $o = NULL;
+    exec($cmd, $o);
+    return true;
+}
+
 function send($n, $e, $m) {
     $p = $n . ' <' . $e . '>';
-    return mail(to(),
-                $p . ' sent a message to FSF India',
-                'Per says:' . PHP_EOL . PHP_EOL . $m
-              . PHP_EOL . PHP_EOL . '---' . PHP_EOL
-              . 'Message originating from ' . $_SERVER['REMOTE_ADDR']
-    );
+    $s = $p . ' sent a message to FSF India';
+    $msg = 'Per says:' . PHP_EOL . PHP_EOL . $m
+         . PHP_EOL . PHP_EOL . '---' . PHP_EOL
+         . 'Message originating from ' . $_SERVER['REMOTE_ADDR'];
+
+    $mo = mail(to(), $s, $msg);
+    $go = gl_new_issue($s, $msg);
+
+    return $mo && $go;
 }
 
 function em_fw($t) {
