@@ -2,16 +2,22 @@
 
 # Better than WhatsApp: Try these Free Software Apps and Services
 
-We recommend using Free Software apps<sup>[1](#fn-1)</sup> like
-[Element][1], [Quicksys][2] or [Conversations][3] that connect to Free
-Software powered services. These services allow users to choose their
-service provider without losing the ability to talk to users of other
+We recommend using [Free Software][free-sw] apps like [Element][1],
+[Quicksys][2] or [Conversations][3] that connect to Free Software
+powered services. These services allow users to choose their service
+provider without losing the ability to talk to users of other
 providers following the same standard. Free Software ensures users'
 freedom and interoperable services ensure there is no vendor lock-in.
+
+Any non-free app controls the user while [free software app is
+controlled by its users][free-sw]. When we are talking about free
+software, we not talking about price, we are concerned about
+freedom.
 
 [1]: https://element.io
 [2]: https://quicksy.im
 [3]: https://conversations.im
+[free-sw]: https://www.gnu.org/philosophy/free-sw.en.html
 
 ## Comparison of different apps and services
 
@@ -228,15 +234,6 @@ needing more details on undergoing such a shift.
 
 [fsfi]: /contact
 [fsci]: https://fsci.in/#join-us
-
-## Footnotes
-
-1. Any non-free app controls the user while [free software app is
-  controlled by its users][free-sw]. When we are talking about free
-  software, we not talking about price, we are concerned about
-  freedom.<span id="fn-1"></span>
-
-[free-sw]: https://www.gnu.org/philosophy/free-sw.en.html
 
 ---
 
