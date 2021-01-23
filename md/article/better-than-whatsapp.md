@@ -33,6 +33,8 @@ freedom and interoperable services ensure there is no vendor lock-in.
 5. Free software client + peer to peer design (Example Briar, Tox):
    respects users' freedom and no vendor lock-in.
 
+![ Comparison of Instant Messengers - Image](/assets/img/ims.png)
+
 ## Some basic concepts
 
 [Vendor lock-in][v-li]: Ability to switch service
@@ -235,3 +237,11 @@ needing more details on undergoing such a shift.
   freedom.<span id="fn-1"></span>
 
 [free-sw]: https://www.gnu.org/philosophy/free-sw.en.html
+
+---
+
+The "Comparison of Instant Messengers" infographic &mdash; Copyright ©
+2021 Riya Sawant. It is licensed under the [Creative Commons
+Attribution-ShareAlike 4.0 International license][cc-by-sa].
+
+[cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0
