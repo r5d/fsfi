@@ -3,7 +3,7 @@
 # Better than WhatsApp: Try these Free Software Apps and Services
 
 We recommend using [Free Software][free-sw] apps like [Element][1],
-[Quicksys][2] or [Conversations][3] that connect to Free Software
+[Quicksy][2] or [Conversations][3] that connect to Free Software
 powered services. These services allow users to choose their service
 provider without losing the ability to talk to users of other
 providers following the same standard. Free Software ensures users'
@@ -11,7 +11,7 @@ freedom and interoperable services ensure there is no vendor lock-in.
 
 Any non-free app controls the user while [free software app is
 controlled by its users][free-sw]. When we are talking about free
-software, we not talking about price, we are concerned about
+software, we are not talking about price, we are concerned about
 freedom.
 
 [1]: https://element.io
@@ -67,9 +67,9 @@ to its source code and actively bans anyone creating a Free Software
 app that can connect to WhatsApp service. They claim their app
 provides end-to-end encryption, but we cannot verify if they actually
 implemented end-to-end encryption without any backdoors (access of app
-remotely without user's permission) or loopholes. Being non-free app is
-enough to reject WhatsApp so we are not going to talk about other bad
-things about WhatsApp.
+remotely without user's permission) or loopholes. Being non-free app
+is enough to reject WhatsApp, so we are not going to talk about other
+bad things about WhatsApp.
 
 There are three broad categories of messaging systems with Free
 Software apps - Centralized services, Federated services and
@@ -121,7 +121,7 @@ apps from connecting to the centralized service][libresignal-issue].
       Telegram, and in comparison to Telegram it offers server software
       also as Free Software which makes it better than Telegram.</p>
 
-      <p>End to end encryption is enabled by default and groups
+      <p>End-to-end encryption is enabled by default and groups
       chats are also encrypted.</p>
 
       <p>Minimal
@@ -129,9 +129,9 @@ apps from connecting to the centralized service][libresignal-issue].
       metadata</a> <a href="https://signal.org/blog/sealed-sender">
       collected on the server</a>.</p>
 
-      <p><strong>Cons</strong>: Even though you are allowed to setup
-      Signal service yourself, the users of your service will not be able
-      to talk to users of official Signal server, making it practically a
+      <p><strong>Cons</strong>: Even though you are allowed to set up
+      Signal service yourself, the users of your service will not be able to
+      talk to users of the official Signal server, making it practically a
       vendor lock-in.</p>
 
       <p>Needs phone number for signing up.</p>
@@ -163,7 +163,7 @@ email provider.
         provider without losing ability to talk to all
         your Quicksy contacts.</p>
 
-       <p>End to end encryption is enabled by
+       <p>End-to-end encryption is enabled by
         default and group chats are also encrypted
         by default.</p>
 
@@ -202,9 +202,9 @@ email provider.
 
        <p><strong>Note</strong>: Since XMPP/Matrix allows you to have
        your choice of apps instead of the ones mentioned above, please
-       chose apps which support end to end encryption
+       choose apps which support end-to-end encryption
        (<a href="https://omemo.top">OMEMO</a> for XMPP). The choices we
-       mentioned have end to end encryption by default.</p>
+       mentioned have end-to-end encryption by default.</p>
     </dd>
 </dl>
 
