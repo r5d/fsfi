@@ -205,3 +205,11 @@
 
 [17]: https://fsf.org.in/contact
 [18]: https://fsci.in/#join-us
+
+---
+
+The "Comparison of Instant Messengers" infographic &mdash; Copyright ©
+2021 Riya Sawant. It is licensed under the [Creative Commons
+Attribution-ShareAlike 4.0 International license][cc-by-sa].
+
+[cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0
