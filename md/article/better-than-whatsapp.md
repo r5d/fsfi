@@ -92,27 +92,26 @@ apps from connecting to the centralized service][libresignal-issue].
 <dl>
   <dt><strong>Telegram</strong></dt>
   <dd>
-    <p><strong>Pros</strong>: Compared to WhatsApp, Telegram provides
-    Free Software app which means end-to-end encryption can be verified
-    to be working as claimed.</p>
 
-    <p><a href="https://t2bot.io/telegram">Allows
-    bots and bridges to connect to other services</a> making it possible
-    to participate in Telegram group chats without using Telegram.</p>
+    <p><strong>Pros</strong>:The client apps for Telegram is Free
+    Software.</p>
 
-    <p><strong>Cons</strong>: Free software app is often not enough
-    to provide full control over your communications. For example,
-    Telegram's apps (Android, desktop, iOS) are free software but still
-    the service is centralized like WhatsApp. So only Telegram's app
-    respects your freedom but not the service.</p>
+    <p>IRC and Matrix users can talk to Telegram users
+    <a href="https://t2bot.io/telegram">through a bridge without creating
+    a Telegram account</a>.</p>
 
-    <p>There is no end-to-end encryption by
-    default in Telegram and messages in groups are not encrypted.</p>
+    <p><strong>Cons</strong>:The Telegram service component &mdash; that
+    enables communication between the Telegram users &mdash; is
+    proprietary and is not federated.</p>
+
+    <p>End-to-end encryption is available only on the Telegram mobile
+    apps.</p>
 
     <p>Needs phone number for signing up.</p>
 
-    <p><strong>Summary</strong>: We gained Free Software app and
-    bridges but lost end-to-end encryption by default.</p>
+    <p><strong>Summary</strong>: The official Telegram clients are a
+    amalgamation of free (as in freedom) and proprietary components;
+    the Telegram service component is 100% proprietary.</p>
    </dd>
 
    <dt><strong>Signal</strong></dt>
