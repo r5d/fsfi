@@ -102,7 +102,7 @@ apps from connecting to the centralized service][libresignal-issue].
 
     <p><strong>Cons</strong>:The Telegram service component &mdash; that
     enables communication between the Telegram users &mdash; is
-    proprietary and is not federated.</p>
+    proprietary (non-free) and is not federated.</p>
 
     <p>End-to-end encryption is available only on the Telegram mobile
     apps.</p>
@@ -110,8 +110,8 @@ apps from connecting to the centralized service][libresignal-issue].
     <p>Needs phone number for signing up.</p>
 
     <p><strong>Summary</strong>: The official Telegram clients are a
-    amalgamation of free (as in freedom) and proprietary components;
-    the Telegram service component is 100% proprietary.</p>
+    amalgamation of free (as in freedom) and proprietary (non-free)
+    components; the Telegram service component is 100% proprietary.</p>
    </dd>
 
    <dt><strong>Signal</strong></dt>
