@@ -52,6 +52,12 @@ nav {
     }
 }
 
+// Language Block
+@include until($desktop - 1) {
+    .lang-block {
+        margin-right: 5px;
+    }
+}
 
 // Home - Banner
 
