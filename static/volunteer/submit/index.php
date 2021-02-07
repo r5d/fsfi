@@ -21,7 +21,7 @@ function email_valid($e) {
 
 function conf() {
     return json_decode(file_get_contents(
-        $_SERVER['DOCUMENT_ROOT'] . '/conf.json'
+        $_SERVER['DOCUMENT_ROOT'] . '/../conf.json'
     ));
 }
 
