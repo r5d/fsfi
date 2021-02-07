@@ -51,8 +51,7 @@ function send($n, $e, $m) {
     $p = $n . ' <' . $e . '>';
     $s = $p . ' wants to volunteer for FSF India';
     $msg = 'Per says:' . PHP_EOL . PHP_EOL . $m
-       . PHP_EOL . PHP_EOL . '---' . PHP_EOL
-       . 'Message originating from ' . $_SERVER['REMOTE_ADDR'];
+       . PHP_EOL;
 
     $mo = mail(to(), $s, $msg);
     $go = gl_new_issue($s, $msg);
