@@ -85,32 +85,28 @@ nav {
 }
 
 // Feed, Social
+@mixin icon($url) {
+    content: url($url);
+    background-color: $fsfi-dark;
+    max-width: 17px;
+    border-radius: 3px;
+    margin-left: 2px;
+}
+
 a.feed {
     border-bottom: 0px;
 }
 
 .feed-icon {
-    content: url('/assets/img/feed.svg');
-    background-color: $fsfi-dark;
-    max-width: 17px;
-    border-radius: 3px;
-    margin-left: 2px;
+    @include icon('/assets/img/feed.svg');
 }
 
 .mastadon-icon {
-    content: url('/assets/img/mastadon.svg');
-    background-color: $fsfi-dark;
-    max-width: 17px;
-    border-radius: 3px;
-    margin-left: 2px;
+    @include icon('/assets/img/mastadon.svg');
 }
 
 .email-icon {
-    content: url('/assets/img/email.svg');
-    background-color: $fsfi-dark;
-    max-width: 17px;
-    border-radius: 3px;
-    margin-left: 2px;
+    @include icon('/assets/img/email.svg');
 }
 
 .follow-block {
