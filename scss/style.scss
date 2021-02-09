@@ -109,6 +109,10 @@ a.feed {
     @include icon('/assets/img/email.svg');
 }
 
+.matrix-icon {
+    @include icon('/assets/img/matrix.svg');
+}
+
 .follow-block {
     p:not(:last-child) {
         margin-bottom: 5px;
