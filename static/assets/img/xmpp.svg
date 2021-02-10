@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   xml:space="preserve"
+   viewBox="0 0 128 128"
+   width="128"
+   height="128"
+   x="0px"
+   y="0px"
+   enable-background="new 0 0 200 200"
+   id="svg953"
+   sodipodi:docname="xmpp.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"><title
+   id="title1015">XMPP Icon</title><metadata
+   id="metadata959"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>XMPP Icon</dc:title><cc:license
+         rdf:resource="https://commons.wikimedia.org/wiki/Category:Expat/MIT_License" /><dc:date>2021-02-10</dc:date><dc:creator><cc:Agent><dc:title>rsiddharth &lt;s@ricketyspace.net&gt;</dc:title></cc:Agent></dc:creator><dc:description>XMPP Icon for FSF India website. It is a derivative work of https://commons.wikimedia.org/wiki/File:XMPP_logo.svg</dc:description></cc:Work></rdf:RDF></metadata><defs
+   id="defs957" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="2175"
+   inkscape:window-height="1460"
+   id="namedview955"
+   showgrid="false"
+   inkscape:zoom="4"
+   inkscape:cx="-92.218759"
+   inkscape:cy="24.788499"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="svg953" />
+
+<linearGradient
+   id="SVGID_right_"
+   y2="1.279e-13"
+   gradientUnits="userSpaceOnUse"
+   x2="-1073.2"
+   gradientTransform="translate(1196.604,15.368977)"
+   y1="126.85"
+   x1="-1073.2">
+	<stop
+   stop-color="#1b3967"
+   offset=".011"
+   id="stop919" />
+	<stop
+   stop-color="#13b5ea"
+   offset=".467"
+   id="stop921" />
+	<stop
+   stop-color="#002b5c"
+   offset=".9945"
+   id="stop923" />
+</linearGradient>
+
+<linearGradient
+   id="SVGID_left_"
+   y2="1.279e-13"
+   gradientUnits="userSpaceOnUse"
+   x2="-1073.2"
+   gradientTransform="matrix(-1,0,0,1,-994.78801,15.367977)"
+   y1="126.85"
+   x1="-1073.2">
+	<stop
+   stop-color="#1b3967"
+   offset=".011"
+   id="stop926" />
+	<stop
+   stop-color="#13b5ea"
+   offset=".467"
+   id="stop928" />
+	<stop
+   stop-color="#002b5c"
+   offset=".9945"
+   id="stop930" />
+</linearGradient>
+
+
+
+
+
+
+
+
+
+
+
+
+<g
+   id="g1013"
+   transform="matrix(0.9359814,0,0,0.9359814,3.6379175,19.84885)"
+   style="fill:#ffffff"><path
+     d="m 100.32636,13.360735 c 0.0542,0.924602 -1.258388,0.681656 -1.258388,1.614708 0,27.147242 -32.785695,68.564206 -64.565795,76.566625 v 1.154168 C 76.720498,88.809106 125.03288,44.952122 126.09621,3.3696814 l -25.77267,9.9917576 z"
+     style="fill:#ffffff;stroke-width:0.70419"
+     id="path933" /><path
+     d="m 87.55798,16.70071 c 0.05352,0.924602 0.0845,1.85202 0.0845,2.786481 0,27.147242 -21.617925,63.727122 -53.396631,71.728837 v 1.154168 c 41.578219,-1.964691 74.510381,-44.380901 74.510381,-76.897594 0,-1.672452 -0.0901,-3.330117 -0.26126,-4.968767 l -20.935577,6.195466 z"
+     style="fill:#ffffff;stroke-width:0.70419"
+     id="path935" /><path
+     d="m 108.69637,10.117234 -5.36381,1.916806 c 0.0289,0.677431 0.0465,1.587245 0.0465,2.271014 0,29.026022 -26.245877,69.154318 -61.456095,75.432879 -2.285104,0.766159 -5.308194,1.462603 -7.698209,2.063982 v 1.153463 C 80.17596,89.04008 112.46027,42.348026 108.69989,10.114417 Z"
+     style="fill:#ffffff;stroke-width:0.70419"
+     id="path937" /><path
+     d="m 28.643923,13.360031 c -0.05422,0.924602 1.258388,0.681656 1.258388,1.614708 0,27.147242 32.785699,68.564206 64.565798,76.566625 v 1.154168 C 52.249792,88.808402 3.9374044,44.951418 2.8740769,3.3689772 L 28.64674,13.360735 Z"
+     style="fill:#ffffff;stroke-width:0.70419"
+     id="path939" /><path
+     d="m 41.412302,16.700005 c -0.05352,0.924602 -0.0845,1.852021 -0.0845,2.786482 0,27.147242 21.617936,63.727122 53.396635,71.728837 v 1.154168 C 53.146226,90.404801 20.21406,47.988591 20.21406,15.471897 c 0,-1.672452 0.09014,-3.330116 0.261255,-4.968767 l 20.935579,6.195467 z"
+     style="fill:#ffffff;stroke-width:0.70419"
+     id="path941" /><path
+     d="m 20.273916,10.11653 5.363818,1.916806 c -0.02887,0.677431 -0.04648,1.587245 -0.04648,2.271014 0,29.026022 26.245878,69.154317 61.456093,75.432879 2.285097,0.766159 5.308187,1.462603 7.698209,2.063982 v 1.153463 C 48.79433,89.039376 16.510019,42.347322 20.270395,10.113713 Z"
+     style="fill:#ffffff;stroke-width:0.70419"
+     id="path943" /></g>
+</svg>

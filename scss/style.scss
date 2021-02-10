@@ -113,6 +113,10 @@ a.feed {
     @include icon('/assets/img/matrix.svg');
 }
 
+.xmpp-icon {
+    @include icon('/assets/img/xmpp.svg');
+}
+
 .follow-block {
     p:not(:last-child) {
         margin-bottom: 5px;
