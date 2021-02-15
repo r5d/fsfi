@@ -39,7 +39,7 @@
 5. स्वतंत्र सॉफ्टवेयर ऐप + पीयर-टू-पीयर डिजाइन (उदाहरण ब्रायर, टाॅक्स): उपयोगकर्ताओं
 की स्वतंत्रता और बिना किसी विक्रेता लॉक-इन के।
 
-![ Comparison of Instant Messengers - Image](/assets/img/ims.png)
+![ Comparison of Instant Messengers - Image](/assets/img/ims-hi.png)
 
 ## कुछ बुनियादी संकल्पनाएँ
 
