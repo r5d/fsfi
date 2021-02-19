@@ -12,10 +12,10 @@ over their communications.
 [j]: https://jitsi.org
 [bbb]: https://bigbluebutton.org
 
-We would like to highlight that the FOSDEM 2021 conference which [used
-only free software (Matrix and Jitsi) and hosted 30,000
-attendees][matrix-fosdem] which shows that for large conferences also
-we need not depend on proprietary software.
+We would like to highlight that the FOSDEM 2021 conference which
+[hosted 30,000 attendees used only free software][matrix-fosdem]
+(Matrix and Jitsi). It shows that for large conferences also we need
+not depend on proprietary software.
 
 [matrix-fosdem]: https://matrix.org/blog/2021/02/15/how-we-hosted-fosdem-2021-on-matrix
 
