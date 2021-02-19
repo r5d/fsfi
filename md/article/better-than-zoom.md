@@ -82,7 +82,7 @@ oppressive governments.
 
 Jitsi instances usually have maximum capacity of 70 participants at a
 time.  A list of Jitsi instances can be found at
-<https://wiki.chatons.org/doku.php/la_visio-conference_avec_jitsi> and
+<https://jitsi.github.io/handbook/docs/community/community-instances> and
 a list of BigBlueButton instances can be found at
 <https://wiki.chatons.org/doku.php/la_visio-conference_avec_big_blue_button>. We
 did not try all the instances listed in these links, this is just a
@@ -216,7 +216,7 @@ as easy as clicking a link and loading it in your browser (Recent
 versions of Chromium and Firefox) either on your laptop/desktop or on
 your mobile.
 
-[chatons-j]: https://wiki.chatons.org/doku.php/la_visio-conference_avec_jitsi
+[chatons-j]: https://jitsi.github.io/handbook/docs/community/community-instances
 [chatons-bbb]: https://wiki.chatons.org/doku.php/la_visio-conference_avec_big_blue_button
 
 ## Need help? Contact us
@@ -237,10 +237,25 @@ glad to help you.
 3. <span id="fr-3"></span>[Why Schools Should Exclusively Use Free
    Software][fr-3].
 
+4. <span id="fr-4"></span>Zoom [plans to block and suspend users based
+   on their location][fr-4].  This practice is both surveillance and
+   censorship. It also shows how ready the company is to comply with
+   Chinese orders in violating basic human rights.
+
+5. <span id="fr-5"></span>Employers [are imposing nonfree
+   video conferencing systems on their workers to put them under
+   surveillance][fr-5].
+
+6. <span id="fr-6"></span>Government schools in Delhi are [imposing
+   proprietary software Zoom on students for attending
+   lectures][fr-6].
 
 [fr-1]: https://www.theguardian.com/politics/2020/apr/20/mps-expected-approve-plans-virtual-parliament
 [fr-2]: https://www.npr.org/2020/06/19/880859109/zoom-call-eviction-hearings-they-ll-throw-everything-i-have-out-on-the-street
 [fr-3]: https://www.gnu.org/education/edu-schools.html
+[fr-4]: https://www.theverge.com/2020/6/12/21288995/zoom-blocking-feature-chinese-government-censorship
+[fr-5]: https://www.theguardian.com/world/2020/sep/27/shirking-from-home-staff-feel-the-heat-as-bosses-ramp-up-remote-surveillance
+[fr-6]: https://theprint.in/india/education/delhi-govt-starts-online-lessons-for-class-12-but-only-a-handful-of-students-are-logging-in/397880
 
 - - -
 
