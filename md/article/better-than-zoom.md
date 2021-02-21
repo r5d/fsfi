@@ -12,11 +12,18 @@ over their communications.
 [j]: https://jitsi.org
 [bbb]: https://bigbluebutton.org
 
-We would like to highlight that the FOSDEM 2021 conference which
-[hosted 30,000 attendees used only free software][matrix-fosdem]
-(Matrix and Jitsi). It shows that for large conferences also we need
-not depend on proprietary software.
+It is entirely possible to run large conferences online using free
+software. The FSF hosted its annual [LibrePlanet
+2020][lp20-livestream] and the [FSF 35th anniversary event][fsf35]
+entirely online using free software and [RYF][ryf] hardware. The
+LibrePlanet conference has been live streamed to a worldwide audience
+[since 2014][lp14]. FOSDEM 2021 [was hosted online to an audience of
+over 30K exclusively using free software][matrix-fosdem].
 
+[lp20-livestream]: https://www.fsf.org/blogs/community/how-to-livestream-a-conference-in-just-under-a-week
+[fsf35]: https://www.fsf.org/blogs/community/join-the-fsf-for-an-online-birthday-celebration-on-friday-october-9th
+[ryf]: https://ryf.fsf.org
+[lp14]: https://www.fsf.org/blogs/community/new-highs-for-libreplanet
 [matrix-fosdem]: https://matrix.org/blog/2021/02/15/how-we-hosted-fosdem-2021-on-matrix
 
 ## Problems with proprietary videoconferencing systems
@@ -139,7 +146,7 @@ were also held using Jitsi and Vogol for live-streaming the conference
 and Etherpad + IRC chat were used by the audience to ask
 questions. The [Free Software Foundation][fsf] conducted their 2020
 annual LibrePlanet conference online [without the use of any
-nonfree/proprietary software][fsfi-lp2020]. The FOSDEM 2021 conference
+nonfree/proprietary software][fsf-lp2020]. The FOSDEM 2021 conference
 was [conducted using only free software which hosted 30,000
 attendees][matrix-fosdem] which shows that there is absolutely no
 reason that [any online conference should require proprietary
@@ -156,7 +163,7 @@ organizations can do it too.
 [debconf20]: https://debconf20.debconf.org/about/debconf
 [mdebconf21]: https://wiki.debian.org/DebianIndia/MiniDebConfOnlineIndia2021
 [fsf]: https://fsf.org
-[fsfi-lp2020]: https://www.fsf.org/blogs/community/libreplanet-2020-in-person-component-canceled-but-well-see-you-online
+[fsf-lp2020]: https://www.fsf.org/blogs/community/libreplanet-2020-in-person-component-canceled-but-well-see-you-online
 [sfc-no-zoom]: https://sfconservancy.org/blog/2021/feb/08/just-say-no-to-zoom
 
 ## Educational Institutes should switch to free software
