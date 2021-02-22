@@ -201,8 +201,8 @@
 
 ---
 
-The "Comparison of Instant Messengers" infographic &mdash; Copyright ©
-2021 Riya Sawant. It is licensed under the [Creative Commons
-Attribution-ShareAlike 4.0 International license][cc-by-sa].
+“विभिन्न ऐप और सेवाओं की तुलना” इन्फ़ोग्राफ़िक कॉपीराइट © २०२१ रिया सावंत। इसको
+[क्रिएटिव कॉमन्स अधिकार- अव्युत्पन्न ४.० अंतर्राष्ट्रीय लाइसेंस][cc-by-sa] के अंतर्गत प्रकाशित
+किया गया है।
 
 [cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0
