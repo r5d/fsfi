@@ -1,6 +1,6 @@
 <!-- pubdate: 20190728 -->
 
-# IT syllabus of  class XI in Maharshtra now includes FLOSS
+# IT syllabus of  class XI in Maharashtra now includes FLOSS
 
 We are happy to announce that the Maharashtra State Board's IT
 syllabus of XI standard is now based on Free/Libre and Open Source
