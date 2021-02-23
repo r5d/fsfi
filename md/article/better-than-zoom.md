@@ -177,13 +177,16 @@ to the above mentioned conferences. Educational institutes have a
 responsibility towards their students and teachers to respect their
 freedom and privacy. Students should not be forced to give away their
 freedom and privacy to attend lectures, webinars to build their
-career.
+career. 
+
+We urge teachers to help their students in [resisting against Zoom][resist] or other proprietary software for online teaching. 
 
 If you are from an educational institute, and need help in switching
 to free software services which respect your freedom, we will be glad
 to help you. Please do not [hesitate to contact us in this
 regard][fsfi-contact].
 
+[resist]: https://www.gnu.org/education/teachers-help-students-resist-zoom.html
 [fsfi-contact]: https://fsf.org.in/contact
 
 ## Ways in which students can resist
