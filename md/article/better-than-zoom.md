@@ -180,8 +180,9 @@ The educational use cases for BigBlueButton are
 
 - Online classes (one-to-many)
 
-Instructors can engage remote students with polling, emojis, multi-user whiteboard, and breakout rooms.
-Presenters can record and playback content for later sharing with others. 
+Instructors can engage remote students with polling, emojis,
+multi-user whiteboard, and breakout rooms.  Presenters can record and
+playback content for later sharing with others.
 
 [Chiguru also runs a BigBlueButton server][bbb-cg] especially for
 online classes and includes paid plans according to your needs.
@@ -192,7 +193,8 @@ freedom and privacy. Students should not be forced to give away their
 freedom and privacy to attend lectures, webinars to build their
 career. 
 
-We urge teachers to help their students in [resisting against Zoom][resist] or other proprietary software for online teaching. 
+We urge teachers to help their students in [resisting against
+Zoom][resist] or other proprietary software for online teaching.
 
 If you are from an educational institute, and need help in switching
 to free software services which respect your freedom, we will be glad
