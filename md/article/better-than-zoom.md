@@ -28,22 +28,9 @@ over 30K exclusively using free software][matrix-fosdem].
 
 ## Problems with proprietary videoconferencing systems
 
-In the pandemic time, our communications are being held via nonfree
-video conferencing software like Zoom, Google Meet etc.<sup>[1](#fr)</sup>
-Hosting video conferencing via nonfree software gives away control of
-our communications.
+Video conferencing systems like Zoom and Google Meet require users to use proprietary client programs. This is a fundamental injustice to the user because any nonfree software does not give users freedom and users do not control that program. 
 
-Video communications on Zoom are done via Zoom's central server which
-mistreats users in various ways such as [snooping on users][ia-vice]
-and [shutting down accounts of activists][guardian]. Zoom also
-[censored an event with Palestinian activist Leila Khaled][ti] and
-other events criticizing its censorship. A Zoom executive [reported on
-users to China][wp], and snooped on meetings.  If they discussed the
-Tien An Men Square massacre, he terminated the meetings and the
-participants' accounts, on the orders of China. What made it possible
-is that Zoom's design lets staff snoop on every conversation as it
-passes through the server.  Further, [Zoom has done a lousy job in
-protecting your privacy][cl].
+Further, video communications on the nonfree software Zoom are done via Zoom's central server. The combination of nonfree software client and the central server gives Zoom power over the users which it uses to [snoop][ia-vice] [on its users][wp], [censoring the dissidents][ti] and [preventing certain groups from connecting to its service][guardian].
 
 [ia-vice]: https://web.archive.org/web/20210104084812/https://www.vice.com/en/article/k7e599/zoom-ios-app-sends-data-to-facebook-even-if-you-dont-have-a-facebook-account
 [guardian]: https://www.theguardian.com/technology/2020/jun/11/zoom-shuts-account-of-us-based-rights-group-after-tiananmen-anniversary-meeting
@@ -55,10 +42,12 @@ Surveillance and censorship are the consequences of the power Zoom has
 over its users because of its nonfree software and centralized
 server. It is Zoom's unjust power over their users that we
 oppose. This power bring users at the mercy of the entity (Zoom in
-this case) providing the service. The same is true for other nonfree
-conferencing systems like Google Meet, Microsoft Teams,
-[Skype][skype], etc.
+this case) providing the service. The same is true for [other nonfree
+conferencing systems][verge] like Google Meet, [Microsoft Teams][microsoft],
+[Skype][skype], etc. 
 
+[verge]: https://www.theverge.com/2020/5/1/21244058/google-meet-microsoft-teams-webex-personal-data-collection-privacy-policy-concerns
+[microsoft]: https://www.forbes.com/sites/thomasbrewster/2020/04/27/your-whole-companys-microsoft-teams-data-couldve-been-stolen-with-an-evil-gif/#5859599339fc
 [skype]: https://stallman.org/skype.html
 
 Nonfree programs should never be trusted for privacy even if they say
@@ -68,7 +57,7 @@ the encryption. A company that sold encryption systems to 100
 countries was controlled by US and German intelligence, [and the
 equipment spied on the governments that used it][guardian-crypto-spy]
 which means that you should never trust a proprietary encryption
-program to protect your privacy .  Therefore, we suggest you to reject
+program to protect your privacy. Therefore, we suggest you to reject
 any nonfree/proprietary software.
 
 [guardian-crypto-spy]: https://www.theguardian.com/us-news/2020/feb/11/crypto-ag-cia-bnd-germany-intelligence-report
@@ -125,15 +114,13 @@ used to stream classes live.
 BigBlueButton instances generally have more capacity than Jitsi
 instances and instances like [meet.nixnet.services][bbb-nn] can scale
 up to 270+. Mixed approach of live-streaming and using separate text
-chat for questions can increase the limits.  BigBlueButton supports
+chat for questions can increase the number of participants.  BigBlueButton supports
 white board, presentations, live-streaming on YouTube. We suggest you
 to avoid live-stream on YouTube.  BigBlueButton doesn't need any app
 on mobiles to work, people can simply join via any web browser.
-[Chiguru also runs a BigBlueButton server][bbb-cg] especially for
-online classes and includes paid plans according to your needs.
+
 
 [bbb-nn]: https://meet.nixnet.services
-[bbb-cg]: https://classmeet.chiguru.tech
 
 ## Conferences conducted using only free software
 
@@ -172,18 +159,39 @@ Educational institutes all over the world are conducting
 lectures/webinars via nonfree software.  We suggest educational
 institutes to adopt free software alternatives like Jitsi,
 BigBlueButton and avoid nonfree software for lectures and
-conferences. Conferences can be held using only free software similar
+conferences. 
+
+The educational use cases for BigBlueButton are
+
+- Online tutoring (one-to-one)
+
+- Flipped classrooms (recording content ahead of your session)
+
+- Group collaboration (many-to-many)
+
+- Online classes (one-to-many)
+
+Instructors can engage remote students with polling, emojis, multi-user whiteboard, and breakout rooms.
+Presenters can record and playback content for later sharing with others. 
+
+[Chiguru also runs a BigBlueButton server][bbb-cg] especially for
+online classes and includes paid plans according to your needs.
+Conferences can be held using only free software similar
 to the above mentioned conferences. Educational institutes have a
 responsibility towards their students and teachers to respect their
 freedom and privacy. Students should not be forced to give away their
 freedom and privacy to attend lectures, webinars to build their
-career.
+career. 
+
+We urge teachers to help their students in [resisting against Zoom][resist] or other proprietary software for online teaching. 
 
 If you are from an educational institute, and need help in switching
 to free software services which respect your freedom, we will be glad
 to help you. Please do not [hesitate to contact us in this
 regard][fsfi-contact].
 
+[bbb-cg]: https://classmeet.chiguru.tech
+[resist]: https://www.gnu.org/education/teachers-help-students-resist-zoom.html
 [fsfi-contact]: https://fsf.org.in/contact
 
 ## Ways in which students can resist
@@ -194,11 +202,8 @@ letters to teachers or their administration to create awareness about
 the problems that proprietary software poses. To raise awareness, they
 can share this article.  They can ask their teachers to make
 recordings from the Zoom calls and post the recordings where they can
-download them later. We suggest free software like upload.disroot.org
-or PeerTube for sharing video lectures. Or else ask teachers to post
-the pertinent visual materials so that students can get them before
-the class, and they can record the audio themselves. That way they can
-attend the classes without running any nonfree program.
+download them later. We suggest free software like https://upload.disroot.org/
+or PeerTube for sharing video lectures.
 
 Students can also set up kludges to avoid running nonfree video chat
 programs. For instance, the teacher (or one student) could point a
@@ -210,7 +215,7 @@ kludge for them to speak and send their voice to the Zoom call.
 
 [Find a Jitsi service that suits your needs][chatons-j] and create a
 room with a random name or a name that you can remember. Share the
-meeting link with attendees.  Joining a Jitsi meeting is as easy as
+meeting link with attendees. Joining a Jitsi meeting is as easy as
 clicking a link and loading it in your browser(Recent versions of
 Chromium and Firefox) or Android or iOS Jitsi Meet apps and does not
 require creating any accounts. Jitsi meetings can also be password
@@ -263,7 +268,6 @@ glad to help you.
 [fr-4]: https://www.theverge.com/2020/6/12/21288995/zoom-blocking-feature-chinese-government-censorship
 [fr-5]: https://www.theguardian.com/world/2020/sep/27/shirking-from-home-staff-feel-the-heat-as-bosses-ramp-up-remote-surveillance
 [fr-6]: https://theprint.in/india/education/delhi-govt-starts-online-lessons-for-class-12-but-only-a-handful-of-students-are-logging-in/397880
-
 - - -
 
 α. <span id="fn-1"></span>The article uses the term 'FOSS' which
