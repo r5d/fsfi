@@ -28,9 +28,17 @@ over 30K exclusively using free software][matrix-fosdem].
 
 ## Problems with proprietary videoconferencing systems
 
-Video conferencing systems like Zoom and Google Meet require users to use proprietary client programs. This is a fundamental injustice to the user because any nonfree software does not give users freedom and users do not control that program. 
+Video conferencing systems like Zoom and Google Meet require users to
+use proprietary client programs. This is a fundamental injustice to
+the user because any nonfree software does not give users freedom and
+users do not control that program.
 
-Further, video communications on the nonfree software Zoom are done via Zoom's central server. The combination of nonfree software client and the central server gives Zoom power over the users which it uses to [snoop][ia-vice] [on its users][wp], [censoring the dissidents][ti] and [preventing certain groups from connecting to its service][guardian].
+Further, video communications on the nonfree software Zoom are done
+via Zoom's central server. The combination of nonfree software client
+and the central server gives Zoom power over the users which it uses
+to [snoop][ia-vice] [on its users][wp], [censoring the dissidents][ti]
+and [preventing certain groups from connecting to its
+service][guardian].
 
 [ia-vice]: https://web.archive.org/web/20210104084812/https://www.vice.com/en/article/k7e599/zoom-ios-app-sends-data-to-facebook-even-if-you-dont-have-a-facebook-account
 [guardian]: https://www.theguardian.com/technology/2020/jun/11/zoom-shuts-account-of-us-based-rights-group-after-tiananmen-anniversary-meeting
@@ -114,10 +122,11 @@ used to stream classes live.
 BigBlueButton instances generally have more capacity than Jitsi
 instances and instances like [meet.nixnet.services][bbb-nn] can scale
 up to 270+. Mixed approach of live-streaming and using separate text
-chat for questions can increase the number of participants.  BigBlueButton supports
-white board, presentations, live-streaming on YouTube. We suggest you
-to avoid live-stream on YouTube.  BigBlueButton doesn't need any app
-on mobiles to work, people can simply join via any web browser.
+chat for questions can increase the number of participants.
+BigBlueButton supports white board, presentations, live-streaming on
+YouTube. We suggest you to avoid live-stream on YouTube.
+BigBlueButton doesn't need any app on mobiles to work, people can
+simply join via any web browser.
 
 
 [bbb-nn]: https://meet.nixnet.services
