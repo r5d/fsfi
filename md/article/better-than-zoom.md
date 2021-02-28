@@ -164,11 +164,9 @@ organizations can do it too.
 
 ## Educational Institutes should switch to free software
 
-Educational institutes all over the world are conducting
-lectures/webinars via nonfree software.  We suggest educational
-institutes to adopt free software alternatives like Jitsi,
-BigBlueButton and avoid nonfree software for lectures and
-conferences. 
+We suggest educational institutes to adopt free software alternatives
+like Jitsi, BigBlueButton and avoid nonfree software for lectures and
+conferences.
 
 The educational use cases for BigBlueButton are
 
