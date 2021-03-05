@@ -14,7 +14,7 @@ import sys
 
 import mistune
 
-SECTIONS = ["news", "article"]
+SECTIONS = ["news", "article", "case-study"]
 
 # placeholders
 PH = {
