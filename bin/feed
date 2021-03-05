@@ -15,11 +15,10 @@ import sys
 import mistune
 
 URL = "https://fsf.org.in"
-SECTIONS = ["news", "article"]
+SECTIONS = ["news", "article", "case-study"]
+TARGET = "/".join(["_build", "feed.atom"])
 
 F_PH = {
-    "name": "<!-- Feed Name -->",
-    "link": "<!-- Feed Link -->",
     "updated": "<!-- Feed Updated -->",
     "entries": "<!-- Entries -->",
 }
@@ -105,10 +104,6 @@ def elink(sec, s, l):
         return "/".join([URL, sec, s, l])
 
 
-def flink(sec):
-    return "/".join([URL, sec, "feed.atom"])
-
-
 def time(c):
     m = re.search(r"pubdate: ([0-9]{8})", c)
 
@@ -183,30 +178,36 @@ def esort(esd):
     return es
 
 
-def feed(sec, es):
+def feed(es):
     f = template("feed")
-    f = f.replace(F_PH["name"], sec.capitalize(), 2)
-    f = f.replace(F_PH["link"], flink(sec), 1)
     f = f.replace(F_PH["updated"], now(), 1)
     f = f.replace(F_PH["entries"], es, 1)
 
     return f
 
 
-def process(sec):
-    esd = {}
+def process(sec, esd):
     for f in files(sec):
         id, e = entry(sec, f)
         esd[id] = e
 
-    es = "".join(esort(esd))
+    return esd
 
-    write("/".join(["_build", sec, "feed.atom"]), feed(sec, es))
+
+def stringify(esd):
+    return "".join(esort(esd))
+
+
+def commit(es):
+    write(TARGET, feed(es))
 
 
 def run():
+    esd = {}
     for sec in SECTIONS:
-        process(sec)
+        esd = process(sec, esd)
+
+    commit(stringify(esd))
 
 
 if __name__ == "__main__":
