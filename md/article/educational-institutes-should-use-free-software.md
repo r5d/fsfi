@@ -144,27 +144,27 @@ education does not require [giving up rights to freedom and privacy] <https://ww
 free software <https://audio-video.gnu.org/video/richard_stallman_speech-sina.com-2005-09.ogg>
 
 
-    [Sign Free Software Foundation's petition]<https://my.fsf.org/give-students-userfreedom> to call on school administrators around the world to stop requiring students to run nonfree software. 
+[Sign Free Software Foundation's petition]<https://my.fsf.org/give-students-userfreedom> to call on school administrators around the world to stop requiring students to run nonfree software. 
 
 
-    [Free software enables free science] <https://media.libreplanet.org/u/libreplanet/m/free-software-enables-free-science/>
+Free software enables free science] <https://media.libreplanet.org/u/libreplanet/m/free-software-enables-free-science/>
 
 
-    [Guri]<https://guri.hipatia.net/> - a project for free software in education 
+[Guri]<https://guri.hipatia.net/> - a project for free software in education 
 
 
-    Ways in which technology used in education [puts students under surveillance]<https://ssd.eff.org/en/module/privacy-students>
+Ways in which technology used in education [puts students under surveillance]<https://ssd.eff.org/en/module/privacy-students>
 
 
-    Schools are [deploying massive surveillance on their students]<https://www.eff.org/deeplinks/2020/02/schools-are-pushing-boundaries-surveillance-technologies> as if they are dissidents of an authoritarian regime 
+Schools are [deploying massive surveillance on their students]<https://www.eff.org/deeplinks/2020/02/schools-are-pushing-boundaries-surveillance-technologies> as if they are dissidents of an authoritarian regime 
 
 
-    Join Students and Scholars In Speaking Out About the Effects of Mass Surveillance on Campus <https://www.eff.org/deeplinks/2014/05/join-students-and-scholars-speaking-out-about-effects-mass-surveillance-campus>
+Join Students and Scholars In Speaking Out About the Effects of Mass Surveillance on Campus <https://www.eff.org/deeplinks/2014/05/join-students-and-scholars-speaking-out-about-effects-mass-surveillance-campus>
 
 
-    How Much Surveillance Can Democracy Withstand? <https://www.gnu.org/philosophy/surveillance-vs-democracy.html>
+ How Much Surveillance Can Democracy Withstand? <https://www.gnu.org/philosophy/surveillance-vs-democracy.html>
 
 
-    [Don’t Let]<https://www.eff.org/id/deeplinks/2019/10/dont-let-science-publisher-elsevier-hold-knowledge-ransom> Science Publisher Elsevier Hold Knowledge for Ransom 
+[Don’t Let]<https://www.eff.org/id/deeplinks/2019/10/dont-let-science-publisher-elsevier-hold-knowledge-ransom> Science Publisher Elsevier Hold Knowledge for Ransom 
 
 
