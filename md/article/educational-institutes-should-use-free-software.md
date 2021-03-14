@@ -1,7 +1,7 @@
 # Educational Institutes should use exclusively freedom-respecting software 
 
  We urge educational institutes to [use free (as in freedom)/swatantra software that respects students' freedom and
-privacy ][fsw-edu]. For example, the Department of Scientific Computing, Modeling, and
+privacy][fsw-edu]. For example, the Department of Scientific Computing, Modeling, and
    Simulation, Savitribai Phule Pune University [has been using
    free/swantra software tools for more than 20 years and it's currently
    helping other departments at Savitribai Phule Pune University adopt
@@ -14,7 +14,7 @@ privacy ][fsw-edu]. For example, the Department of Scientific Computing, Modelin
 
 Free/Swatantra software means that you, as user, have [the freedom to run, study, modify, and redistribute
   the program]. 
-(See the [free software definition]<https://www.gnu.org/philosophy/free-sw.html>.) With these freedoms, the users (both individually and collectively)
+(See the [free software definition] <https://www.gnu.org/philosophy/free-sw.html>.) With these freedoms, the users (both individually and collectively)
 control the program and what it does for them.  When users don't control the program, we call it a “nonfree” or “proprietary” program. Proprietary software is an injustice to the user because it
 puts its developer or owner in a position of power over its users
 <https://www.gnu.org/philosophy/free-software-even-more-important.html>. They
