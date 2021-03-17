@@ -39,7 +39,7 @@ freedom.
 5. Free software client + peer to peer design (Example Briar, Tox):
    respects users' freedom and no vendor lock-in.
 
-![ Comparison of Instant Messengers - Image](/assets/img/ims.png)
+![ Comparison of Instant Messengers - Image ](/assets/img/ims.png)
 
 ## Some basic concepts
 
