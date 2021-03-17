@@ -8,16 +8,17 @@ privacy][free-sw-edu]. For example, the Department of Scientific
 Computing, Modeling, and Simulation, Savitribai Phule Pune University
 [has been using free/swatantra software tools for more than 20 years
 and it's currently helping other departments at Savitribai Phule Pune
-University adopt free software][cs-unipune]. Free software is readily
-available for all activities in the digital classroom and should be
+University adopt free software][cs-unipune]. Free software is [readily
+available][gnu-edu] for all activities in the digital classroom and should be
 preferred over their proprietary counterparts.
 
 [free-sw-edu]: https://www.gnu.org/software/free-software-for-education.html
 [cs-unipune]: https://fsf.org.in/case-study/unipune
+[gnu-edu]: https://www.gnu.org/software/free-software-for-education.html
 
 ## What is Free/Swatantra Software?
 
-Free/Swatantra software means that you, as user, have the freedom to
+[Free/Swatantra software][free-sw] means that you, as user, have the freedom to
 run, study, modify, and redistribute the program. With these freedoms,
 the users, both individually and collectively, control the program and
 what it does for them.  When users don't control the program, we call
@@ -98,7 +99,7 @@ Zoom, Google Meet, and Microsoft Teams are proprietary software
 generally used in live classes and webinars. All of them use their
 power over the users to collect personal and location data. Zoom
 [collects a lot of data][spm-zoom] on students. Microsoft Teams and
-Google also [snoop on their users][verge-mz].  We urge teachers to
+Google Meet also [snoop on their users][verge-mz].  We urge teachers to
 help their students in resisting against proprietary videoconferencing
 platforms; some ideas are [listed here][gnu-rz].
 
