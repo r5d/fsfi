@@ -196,7 +196,7 @@ Digital writing pad: [Xournal][xournal]
 Document editor: [LibreOffice][libreoffice]
 
 Form filling: [KoBoToolbox][kobotoolbox], [NextCloud Forms][nc-f]
-&mdash; [Disroot][ds-nc-f] provides NextCloud Forms.
+&mdash; [Disroot][dr-nc-f] provides NextCloud Forms.
 
 [gnu-fd]: https://gnu.org/distros/free-distros.html
 [fsfi-zoom]: https://fsf.org.in/article/better-than-zoom
@@ -328,33 +328,25 @@ us][fsfi-contact], we would be very glad to help you.
 - Richard Stallman on [why schools should use exclusively free
   software][rms-sina].
 
-
 - [Sign Free Software Foundation's petition][fsf-gsu] to call on
   school administrators around the world to stop requiring students to
   run nonfree software.
 
-
 - [Free software enables free science][lp-fs].
-
 
 - [Guri][guri] &mdash; a project for free software in education.
 
-
 - Ways in which technology used in education [puts students under
   surveillance][eff-ps].
-
 
 - Schools are [deploying massive surveillance on their
   students][eff-st] as if they are dissidents of an authoritarian
   regime.
 
-
 - [Join Students and Scholars In Speaking Out About the Effects of
   Mass Surveillance on Campus][eff-ms].
 
-
 - [How Much Surveillance Can Democracy Withstand?][gnu-svd]
-
 
 - [Don't Let][eff-ks] Science Publisher Elsevier Hold Knowledge for
   Ransom.
