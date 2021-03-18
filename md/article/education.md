@@ -8,9 +8,9 @@ privacy][free-sw-edu]. For example, the Department of Scientific
 Computing, Modeling, and Simulation, Savitribai Phule Pune University
 [has been using free/swatantra software tools for more than 20 years
 and it's currently helping other departments at Savitribai Phule Pune
-University adopt free software][cs-unipune]. Free software is readily
+University adopt free software][cs-unipune]. Free software [is readily
 available for all activities in the digital classroom and should be
-preferred over their proprietary counterparts.
+preferred over their proprietary counterparts][free-sw-edu].
 
 [free-sw-edu]: https://www.gnu.org/software/free-software-for-education.html
 [cs-unipune]: https://fsf.org.in/case-study/unipune
@@ -308,7 +308,7 @@ exclusively Free Software:
 
 - Department of Scientific Computing, Modeling, and Simulation,
   Savitribai Phule Pune University &mdash; [Statement
-  here](cs-unipune)
+  here][cs-unipune]
 
 If you know of other institutes which use free software, please let us
 know, we would like to add them in this list. If you need help in
