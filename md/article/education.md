@@ -18,7 +18,7 @@ and should be preferred over their proprietary counterparts.
 ## What is Free/Swatantra Software?
 
 [Free/Swatantra software][free-sw] means that you, as user, have the
-freedom to run, study, modify, and redistribute the program. With
+freedom to run, study, modify, and redistribute the program.  Thus, “free software” is a matter of liberty, not price. To understand the concept, you should think of “free” as in “free speech,” not as in “free beer”. With
 these freedoms, the users, both individually and collectively, control
 the program and what it does for them.  When users don't control the
 program, we call it &ldquo;nonfree&rdquo; or &ldquo;proprietary&rdquo;
@@ -219,12 +219,15 @@ users of the mail server(students, teachers, other staff etc) can use
 end-to-end encryption so that only the participants of a communication
 can read the mails.  Furthermore, PGP may be used to encrypt emails to
 recipients. For information about using PGP see [FSF's Email
-Self-Defense guide][fsf-esg].
+Self-Defense guide][fsf-esg]; for pEp see
+  [pep.security/docs][pep]. For most users, pEp might be more
+  straightforward to use. 
 
 [fsf-esg]: https://emailselfdefense.fsf.org
 [mib]: https://mailinabox.email
 [irm]: https://www.iredmail.org
 [fb]: https://www.freedombox.org
+[pep]: https://www.pep.security/docs
 
 The GNU website [lists free software that can be used in schools and
 educational institutions of all levels][free-sw-edu]. The Free
