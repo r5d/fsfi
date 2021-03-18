@@ -219,15 +219,12 @@ users of the mail server(students, teachers, other staff etc) can use
 end-to-end encryption so that only the participants of a communication
 can read the mails.  Furthermore, PGP may be used to encrypt emails to
 recipients. For information about using PGP see [FSF's Email
-Self-Defense guide][fsf-esg]; for pEp see
-  [pep.security/docs][pep]. For most users, pEp might be more
-  straightforward to use. 
+Self-Defense guide][fsf-esg].
 
 [fsf-esg]: https://emailselfdefense.fsf.org
 [mib]: https://mailinabox.email
 [irm]: https://www.iredmail.org
 [fb]: https://www.freedombox.org
-[pep]: https://www.pep.security/docs
 
 The GNU website [lists free software that can be used in schools and
 educational institutions of all levels][free-sw-edu]. The Free
