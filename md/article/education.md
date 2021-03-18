@@ -18,7 +18,10 @@ and should be preferred over their proprietary counterparts.
 ## What is Free/Swatantra Software?
 
 [Free/Swatantra software][free-sw] means that you, as user, have the
-freedom to run, study, modify, and redistribute the program.  Thus, “free software” is a matter of liberty, not price. To understand the concept, you should think of “free” as in “free speech,” not as in “free beer”. With
+freedom to run, study, modify, and redistribute the program.  Thus,
+&ldquo;free software&rdquo; is a matter of liberty, not price. To
+understand the concept, you should think of &ldquo;free&rdquo; as in
+&ldquo;free speech&rdquo;, not as in &ldquo;free beer&rdquo;. With
 these freedoms, the users, both individually and collectively, control
 the program and what it does for them.  When users don't control the
 program, we call it &ldquo;nonfree&rdquo; or &ldquo;proprietary&rdquo;
