@@ -91,7 +91,7 @@ b. Gmail [makes psychological profiles][alternet-gmail] not only of
 Gmail users but of everyone who sends mail to Gmail users.
 
 c. Microsoft Outlook is known to block incoming mails from other email
-service providers [without providing a reason](disroot-msh).
+service providers [without providing a reason][disroot-msh].
 
 [prism]: https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29
 [alternet-gmail]: https://www.alternet.org/2013/12/google-using-gmail-build-psychological-profiles-hundreds-millions-people/?paging=off
