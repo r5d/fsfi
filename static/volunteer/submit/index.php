@@ -9,7 +9,7 @@
  */
 
 function to() {
-    return 'praveen@onenetbeyond.org, ravi@anche.no, ravi@fsf.org.in';
+    return 's@gnu.org.in';
 }
 
 function email_valid($e) {
