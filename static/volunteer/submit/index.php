@@ -32,7 +32,7 @@ function gl_new_issue($title, $desc) {
      * Unable to install php curl module on the current server. So
      * commandline curl for now.
      */
-    $cmd = sprintf("%s  -v   --request POST"
+    $cmd = sprintf("%s  -v -4  --request POST"
                  . " --header 'Private-Token: %s'"
                  . " %s/1047/issues"
                  . " -d title='%s'"
