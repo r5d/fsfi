@@ -238,7 +238,7 @@ versions of Chromium and Firefox) either on your laptop/desktop or on
 your mobile.
 
 [chatons-j]: https://jitsi.github.io/handbook/docs/community/community-instances
-[chatons-bbb]: https://wiki.chatons.org/doku.php/la_visio-conference_avec_big_blue_button
+[chatons-bbb]: https://wiki.chatons.org/doku.php/services/visio-conference/big_blue_button
 
 ## Need help? Contact us
 
