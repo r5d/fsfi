@@ -54,5 +54,5 @@ clean:
 
 
 upload: site
-	rsync -avz _build/ gnu.org.in:/var/www/fsfi/
+	rsync -e "ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa" -avz _build/ gnu.org.in:/var/www/fsfi/
 .PHONY: upload
