@@ -88,7 +88,7 @@ Jitsi instances usually have maximum capacity of 70 participants at a
 time.  A list of Jitsi instances can be found at
 <https://jitsi.github.io/handbook/docs/community/community-instances> and
 a list of BigBlueButton instances can be found at
-<https://wiki.chatons.org/doku.php/la_visio-conference_avec_big_blue_button>. We
+<https://wiki.chatons.org/doku.php/services/visio-conference/big_blue_button>. We
 did not try all the instances listed in these links, this is just a
 list for users to try different instances. We suggest you to read the
 policies of the servers before hosting your communications there.
